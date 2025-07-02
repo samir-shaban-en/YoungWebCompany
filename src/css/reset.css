@@ -25,6 +25,8 @@ a {
 
 button {
   cursor: pointer;
+  padding: 0;
+  border: 0;
 }
 
 img {
