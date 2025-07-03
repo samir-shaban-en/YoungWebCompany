@@ -1,0 +1,38 @@
+.feedbacks-section {
+  padding-block: 64px;
+}
+.feedback-title {
+  font-size: 36px;
+  font-weight: var(--bold-weght);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
+}
+.feedback-text {
+  font-weight: var(--regular-weight);
+  font-size: 18px;
+
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+.section-text {
+  margin-bottom: 80px;
+}
+.swiper-slide {
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  border-radius: 16px;
+  padding-inline: 32px;
+  padding-top: 32px;
+  padding-bottom: 102px;
+}
+
+.swiper-button-prev {
+  width: 112px;
+  height: 48px;
+  background: #e15d05;
+}
+.swiper-button-next {
+  width: 112px;
+  height: 48px;
+  background: #e15d05;
+}
