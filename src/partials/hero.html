@@ -1,10 +1,11 @@
 <section class="hero">
   <div class="container">
     <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
-    <a href="#books" class="button hero-button">Shop Now!</a>
-    <div class="hero-slider">
-      <ul class="hero-banners">
-        <li class="hero-banner-item active" data-banner="1">
+    <a href="#books" class="button hero-button" aria-label="Shop Now!">Shop Now!</a>
+
+    <div class="hero-slider swiper">
+      <ul class="hero-banners swiper-wrapper">
+        <li class="hero-banner-item swiper-slide" data-banner="1">
           <picture>
             <source srcset="/img/hero-img/hero-banner-1-x1.png 1x, /img/hero-img/hero-banner-1-x2.png 2x"
               type="image/png">
@@ -14,9 +15,10 @@
           </picture>
           <div class="banner-content">
             <p class="banner-text">Get 10% off your first order!</p>
+            <a href="#" class="button banner-button" aria-label="Shop Now!">Shop Now!</a>
           </div>
         </li>
-        <li class="hero-banner-item" data-banner="2">
+        <li class="hero-banner-item swiper-slide" data-banner="2">
           <picture>
             <source srcset="/img/hero-img/hero-banner-2-x1.png 1x, /img/hero-img/hero-banner-2-x2.png 2x"
               type="image/png">
@@ -26,9 +28,10 @@
           </picture>
           <div class="banner-content">
             <p class="banner-text">Save 15% on some books!</p>
+            <a href="#" class="button banner-button" aria-label="Shop Now!">Shop Now!</a>
           </div>
         </li>
-        <li class="hero-banner-item" data-banner="3">
+        <li class="hero-banner-item swiper-slide" data-banner="3">
           <picture>
             <source srcset="/img/hero-img/hero-banner-3-x1.png 1x, /img/hero-img/hero-banner-3-x2.png 2x"
               type="image/png">
@@ -38,28 +41,32 @@
           </picture>
           <div class="banner-content">
             <p class="banner-text">Up to 40% off summer reads!</p>
+            <a href="#" class="button banner-button" aria-label="Shop Now!">Shop Now!</a>
           </div>
         </li>
-        <li class="hero-banner-item" data-banner="4">
+        <li class="hero-banner-item swiper-slide" data-banner="4">
           <picture>
             <source srcset="/img/hero-img/hero-banner-4-x1.png 1x, /img/hero-img/hero-banner-4-x2.png 2x"
               type="image/png">
             <img src="/img/hero-img/hero-banner-4-x1.png"
-              srcset="/img/hero-img/hero-banner-4-x1.png 1x, /img/hero-img/hero-banner-4-x2.png 2x"
+              srcset="/img/hero-img/hero-banner-4-x1.png 1x, /img/hero/hero-banner-4-x2.png 2x"
               alt="Людина читає книгу на траві" class="hero-banner-image">
           </picture>
           <div class="banner-content">
             <p class="banner-text">Last chance to buy your spring bestsellers!</p>
+            <a href="#" class="button banner-button" aria-label="Shop Now!">Shop Now!</a>
           </div>
         </li>
       </ul>
+
       <div class="slider-controls">
-        <button type="button" class="slider-button prev-button" disabled aria-label="Попередній банер">
+        <button type="button" class="slider-button prev-button swiper-button-prev" aria-label="Попередній банер">
           <svg width="48" height="48">
             <use href="/img/symbol-defs.svg#icon-left-arrow-alt"></use>
           </svg>
         </button>
-        <button type="button" class="slider-button next-button" aria-label="Наступний банер">
+        <div class="current-banner-text"></div>
+        <button type="button" class="slider-button next-button swiper-button-next" aria-label="Наступний банер">
           <svg width="48" height="48">
             <use href="/img/symbol-defs.svg#icon-right-arrow-alt"></use>
           </svg>

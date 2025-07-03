@@ -1,46 +1,45 @@
+import Swiper from 'swiper';
+import { Navigation, Pagination } from 'swiper/modules';
+
 document.addEventListener('DOMContentLoaded', () => {
-    const bannerList = document.querySelector('.hero-banners');
-    const banners = document.querySelectorAll('.hero-banner-item');
-    const prevButton = document.querySelector('.prev-button');
-    const nextButton = document.querySelector('.next-button');
+  const heroSwiperElement = document.querySelector('.hero-slider');
+  const currentBannerTextElement = document.querySelector('.current-banner-text');
 
-    let currentBannerIndex = 0;
-    const totalBanners = banners.length;
+  if (heroSwiperElement) {
+    const heroSwiper = new Swiper(heroSwiperElement, {
+      modules: [Navigation, Pagination],
+      loop: true,
+      slidesPerView: 1,
+      spaceBetween: 0,
 
-    function updateSlider() {
-        banners.forEach((banner, index) => {
-            if (window.innerWidth >= 768) {
-            
-                if (index === currentBannerIndex) {
-                    banner.classList.add('active');
-                } else {
-                    banner.classList.remove('active');
-                }
-               
-                prevButton.disabled = currentBannerIndex === 0;
-                nextButton.disabled = currentBannerIndex === totalBanners - 1;
-            } else {
-               
-                banner.style.display = 'block'; 
-                banner.classList.remove('active'); 
-            }
-        });
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+
+      on: {
+        init: function () {
+          updateBannerText(this);
+        },
+        slideChange: function () {
+          updateBannerText(this);
+        },
+      },
+    });
+
+    function updateBannerText(swiperInstance) {
+      const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
+      const bannerContent = activeSlide.querySelector('.banner-content');
+
+      if (bannerContent) {
+        const bannerText = bannerContent.querySelector('.banner-text');
+        if (bannerText && currentBannerTextElement) {
+          currentBannerTextElement.textContent = bannerText.textContent;
+        }
+      } else if (currentBannerTextElement) {
+        currentBannerTextElement.textContent = '';
+      }
     }
-
-    prevButton.addEventListener('click', () => {
-        if (currentBannerIndex > 0) {
-            currentBannerIndex--;
-            updateSlider();
-        }
-    });
-   
-    nextButton.addEventListener('click', () => {
-        if (currentBannerIndex < totalBanners - 1) {
-            currentBannerIndex++;
-            updateSlider();
-        }
-    });
-
-    updateSlider();
-    window.addEventListener('resize', updateSlider);
+  }
 });
+
