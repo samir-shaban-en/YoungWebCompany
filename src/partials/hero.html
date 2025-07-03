@@ -1,3 +1,95 @@
-<section>
-  <div class="container"></div>
-</section>
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booksy</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+  <header>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
+        <a href="#books" class="button hero-button">Shop Now!</a>
+        <div class="hero-slider">
+          <ul class="hero-banners">
+            <li class="hero-banner-item active" data-banner="1">
+              <picture>
+                <source srcset="./images/hero-banner-1-x1.webp 1x, ./images/hero-banner-1-x2.webp 2x" type="image/webp">
+                <img src="./images/hero-banner-1-x1.jpg"
+                  srcset="./images/hero-banner-1-x1.jpg 1x, ./images/hero-banner-1-x2.jpg 2x" alt="Книга та чашка кави"
+                  class="hero-banner-image">
+              </picture>
+              <div class="banner-content">
+                <p class="banner-text">Get 10% off your first order!</p>
+              </div>
+            </li>
+            <li class="hero-banner-item" data-banner="2">
+              <picture>
+                <source srcset="./images/hero-banner-2-x1.webp 1x, ./images/hero-banner-2-x2.webp 2x" type="image/webp">
+                <img src="./images/hero-banner-2-x1.jpg"
+                  srcset="./images/hero-banner-2-x1.jpg 1x, ./images/hero-banner-2-x2.jpg 2x"
+                  alt="Окуляри та розкрита книга" class="hero-banner-image">
+              </picture>
+              <div class="banner-content">
+                <p class="banner-text">Save 15% on some books!</p>
+              </div>
+            </li>
+            <li class="hero-banner-item" data-banner="3">
+              <picture>
+                <source srcset="./images/hero-banner-3-x1.webp 1x, ./images/hero-banner-3-x2.webp 2x" type="image/webp">
+                <img src="./images/hero-banner-3-x1.jpg"
+                  srcset="./images/hero-banner-3-x1.jpg 1x, ./images/hero-banner-3-x2.jpg 2x" alt="Книжкова полиця"
+                  class="hero-banner-image">
+              </picture>
+              <div class="banner-content">
+                <p class="banner-text">Up to 40% off summer reads!</p>
+              </div>
+            </li>
+            <li class="hero-banner-item" data-banner="4">
+              <picture>
+                <source srcset="./images/hero-banner-4-x1.webp 1x, ./images/hero-banner-4-x2.webp 2x" type="image/webp">
+                <img src="./images/hero-banner-4-x1.jpg"
+                  srcset="./images/hero-banner-4-x1.jpg 1x, ./images/hero-banner-4-x2.jpg 2x"
+                  alt="Людина читає книгу на траві" class="hero-banner-image">
+              </picture>
+              <div class="banner-content">
+                <p class="banner-text">Last chance to buy your spring bestsellers!</p>
+              </div>
+            </li>
+          </ul>
+          <div class="slider-controls">
+            <button type="button" class="slider-button prev-button" disabled aria-label="Попередній банер">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-left"></use>
+              </svg>
+            </button>
+            <button type="button" class="slider-button next-button" aria-label="Наступний банер">
+              <svg width="24" height="24">
+                <use href="./images/icons.svg#icon-arrow-right"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  </footer>
+
+  <script src="./js/hero-slider.js"></script>
+</body>
+
+</html>
