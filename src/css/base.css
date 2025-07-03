@@ -5,6 +5,8 @@ html {
 body {
   font-family: var(--main-font);
   font-weight: var(--regular-weight);
+  background-color: #fceee6;
+  color: #0b0500;
 }
 
 :root {
