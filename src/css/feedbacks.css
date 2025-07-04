@@ -1,6 +1,10 @@
 .feedbacks-section {
   padding-block: 64px;
 }
+.swiper-wrapper {
+  margin-bottom: 32px;
+}
+
 .feedback-title {
   font-size: 36px;
   font-weight: var(--bold-weght);
@@ -23,16 +27,49 @@
   border-radius: 16px;
   padding-inline: 32px;
   padding-top: 32px;
-  padding-bottom: 102px;
+  /* padding-bottom: 102px; */
+  min-height: 314px;
+}
+.feedback-nav-wrapper {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+.name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 16px;
 }
 
-.swiper-button-prev {
-  width: 112px;
+.scroll-btn {
+  flex-shrink: 0;
+  width: 48px;
   height: 48px;
   background: #e15d05;
+  border: 1px solid rgba(11, 5, 0, 0.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.swiper-button-next {
-  width: 112px;
-  height: 48px;
-  background: #e15d05;
+
+.arrow-nav {
+  fill: white;
+}
+.my-swiper {
+  --swiper-pagination-color: #000;
+}
+
+@media only screen and (min-width: 768px) {
+  .swiper-slide {
+    /* padding-bottom: 32px; */
+    min-height: 244px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .swiper-slide {
+    /* padding-bottom: 32px; */
+    min-height: 217px;
+  }
 }

@@ -15,13 +15,15 @@
             Great selection, fast delivery, and beautifully packaged books. My
             go-to store for weekend reads!
           </p>
-          <img
-            srcset="/img/feedbacks/jane.png 1x, /img/feedbacks/jane@2x.png 2x"
-            alt="Jane"
-          />
-          <div>
-            <h3>Jane Doe</h3>
-            <p>Book Lover, Reader</p>
+          <div class="name-wrapper">
+            <img
+              srcset="/img/feedbacks/jane.png 1x, /img/feedbacks/jane@2x.png 2x"
+              alt="Jane"
+            />
+            <div>
+              <h3 class="name-title">Jane Doe</h3>
+              <p class="feedback-text">Book Lover, Reader</p>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
@@ -29,36 +31,71 @@
             Customer service was super helpful, and my order arrived earlier
             than expected. Highly recommend!
           </p>
-
-          <img
-            srcset="/img/feedbacks/john.png 1x, /img/feedbacks/john@2x.png 2x"
-            alt="John"
-          />
-          <div>
-            <h3>John Smith</h3>
-            <p class="feedback-text">Editor, BookMag</p>
+          <div class="name-wrapper">
+            <img
+              srcset="/img/feedbacks/john.png 1x, /img/feedbacks/john@2x.png 2x"
+              alt="John"
+            />
+            <div>
+              <h3 class="name-title">John Smith</h3>
+              <p class="feedback-text">Editor, BookMag</p>
+            </div>
           </div>
         </div>
         <div class="swiper-slide">
           <p class="feedback-text">
             Love the curated picks and clear descriptions. Makes it easy to find
-            my next favorite book.
+            my next favorite br book.
           </p>
-          <img
-            srcset="/img/feedbacks/emily.png 1x, /img/feedbacks/emily@2x.png 2x"
-            alt="John"
-          />
-          <div>
-            <h3>Emily Johnson</h3>
-            <p class="feedback-text">Author, Novelist</p>
+          <div class="name-wrapper">
+            <img
+              srcset="
+                /img/feedbacks/emily.png    1x,
+                /img/feedbacks/emily@2x.png 2x
+              "
+              alt="John"
+            />
+            <div>
+              <h3 class="name-title">Emily Johnson</h3>
+              <p class="feedback-text">Author, Novelist</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <p class="feedback-text">
+            I appreciate how easy it is to browse. The curated books and short
+            descriptions save me so much time.
+          </p>
+          <div class="name-wrapper">
+            <img
+              srcset="
+                /img/feedbacks/micahel.png    1x,
+                /img/feedbacks/michael@2x.png 2x
+              "
+              alt="John"
+            />
+            <div>
+              <h3 class="name-title">Michael Brown</h3>
+              <p class="feedback-text">Reader, Enthusiast</p>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
+      <div class="feedback-nav-wrapper">
+        <div class="my-swiper"></div>
 
-      <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev scroll-btn">
+          <svg class="arrow-nav" width="24" height="24">
+            <use href="/img/symbol-defs.svg#icon-left-arrow-alt"></use>
+          </svg>
+        </div>
+        <div class="swiper-button-next scroll-btn">
+          <svg class="arrow-nav" width="24" height="24">
+            <use href="/img/symbol-defs.svg#icon-right-arrow-alt"></use>
+          </svg>
+        </div>
+      </div>
     </div>
   </div>
 </section>
