@@ -14,4 +14,5 @@ body {
   --regular-weight: 400;
   --bold-weght: 600;
   --medium-weight: 500;
+  --section-block-paddings: 64px;
 }

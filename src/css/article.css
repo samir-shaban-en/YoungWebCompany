@@ -1,11 +1,9 @@
 /* #region mobile */
-
+.article-section {
+  padding-block: var(--section-block-paddings);
+}
 .article-wrapper {
   display: block;
-}
-
-.text-block {
-  /* для мобильных не нужно задавать ширину */
 }
 
 .article-title {
@@ -17,7 +15,7 @@
 
 .article-text {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
   padding-top: 24px;
 }
