@@ -1,12 +1,5 @@
 /* #region mobile */
 
-.container {
-  width: 100%;
-  max-width: 375px;
-  padding: 64px 16px;
-  margin: 0 auto;
-}
-
 .article-wrapper {
   display: block;
 }
@@ -48,11 +41,6 @@
 
 /* #region tablet */
 @media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-    padding: 64px 32px;
-  }
-
   .article-title {
     font-size: 36px;
   }
@@ -79,11 +67,6 @@
 
 /* #region desktop */
 @media (min-width: 1440px) {
-  .container {
-    max-width: 1440px;
-    padding: 96px 64px;
-  }
-
   .article-wrapper {
     display: flex;
     align-items: center;
