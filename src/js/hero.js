@@ -1,16 +1,27 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination } from 'swiper/modules';
+import { Navigation } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   const heroSwiperElement = document.querySelector('.hero-slider');
-  const currentBannerTextElement = document.querySelector('.current-banner-text');
+  const bannerTextElement = document.querySelector('.slider-banner-text');
 
-  if (heroSwiperElement) {
+  if (heroSwiperElement && bannerTextElement) {
+    
+    const updateBannerText = (swiper) => {
+  
+      const activeSlide = swiper.slides[swiper.realIndex];
+      const textOnBanner = activeSlide.querySelector('.banner-text');
+      
+      if (textOnBanner) {
+        bannerTextElement.textContent = textOnBanner.textContent;
+      }
+    };
+
     const heroSwiper = new Swiper(heroSwiperElement, {
-      modules: [Navigation, Pagination],
+      modules: [Navigation],
       loop: true,
       slidesPerView: 1,
-      spaceBetween: 0,
+      spaceBetween: 10,
 
       navigation: {
         nextEl: '.swiper-button-next',
@@ -18,28 +29,13 @@ document.addEventListener('DOMContentLoaded', () => {
       },
 
       on: {
-        init: function () {
-          updateBannerText(this);
+        init: function (swiper) {
+          updateBannerText(swiper);
         },
-        slideChange: function () {
-          updateBannerText(this);
+        slideChange: function (swiper) {
+          updateBannerText(swiper);
         },
       },
     });
-
-    function updateBannerText(swiperInstance) {
-      const activeSlide = swiperInstance.slides[swiperInstance.activeIndex];
-      const bannerContent = activeSlide.querySelector('.banner-content');
-
-      if (bannerContent) {
-        const bannerText = bannerContent.querySelector('.banner-text');
-        if (bannerText && currentBannerTextElement) {
-          currentBannerTextElement.textContent = bannerText.textContent;
-        }
-      } else if (currentBannerTextElement) {
-        currentBannerTextElement.textContent = '';
-      }
-    }
   }
 });
-
