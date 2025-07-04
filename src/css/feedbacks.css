@@ -1,6 +1,5 @@
-
 .feedbacks-section {
-  padding-block: 64px;
+  padding-block: var(--section-block-paddings);
 }
 .swiper-wrapper {
   margin-bottom: 32px;
@@ -28,7 +27,7 @@
   border-radius: 16px;
   padding-inline: 32px;
   padding-top: 32px;
-  /* padding-bottom: 102px; */
+
   min-height: 314px;
 }
 .feedback-nav-wrapper {
@@ -74,4 +73,3 @@
     min-height: 217px;
   }
 }
-
