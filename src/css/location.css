@@ -89,24 +89,13 @@
 }
 
 /* Адаптивность для планшетов и меньше */
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .location-block {
-    flex-direction: column;
-    gap: 40px;
-  }
-
-  .location-heading {
-    font-size: 36px;
+    gap: 32px;
   }
 }
-
-/* Адаптивность для мобильных устройств */
-@media (max-width: 480px) {
-  .location-heading {
-    font-size: 28px;
-  }
-
-  .location-description {
-    font-size: 16px;
+@media (min-width: 1440px) {
+  .location-block {
+    gap: 80px;
   }
 }
