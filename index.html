@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booksy</title>
     <script type="module" crossorigin src="/YoungWebCompany/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-B1Qx91K4.js">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-DMjVsepR.css">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-CaKD3Uce.css">
+    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-D7w5dY3u.js">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-CpDLb-7d.css">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-BNp2owRJ.css">
   </head>
   <body>
     <header>
@@ -21,10 +21,33 @@
   <div class="container"></div>
 </section>
 
-      <section>
-  <div class="container"></div>
-</section>
+      <section class="books">
+  <h1>Trending books</h1>
+  <div class="container">
+    <div class="books-wrapper">
+      <div class="categories-books js-listener-categories">
+        <div class="container-categories js-container">
+          <div class="books-subtitle-placeholder">
+            <h2>Books</h2>
+            <div>Showing <span class="current-number-books"></span>&nbsp;of&nbsp;<span class="total-number-books"></span></div>
+          </div>
+          <ul class="list categories js-list-categories">
+            <li class="item" data-name="top-books" tabindex="0">All categories</li>
+          </ul>
+        </div>
+      </div>
 
+
+      <div class="books-list-placeholder">
+      <ul class="list list-books js-list-books all-books-show"></ul>
+      <span class="loader"></span>
+      <button type="button" class="load-more">Load more</button>
+      </div>
+    </div>
+    
+  </div>
+
+</section>
       <section class="feedbacks-section">
   <div class="container">
     <h2 class="feedback-title">Customer Feedbacks</h2>
@@ -356,7 +379,13 @@
 </footer>
 
 
-    <div class="container"></div>
+    <div class="modal modal-books">
+    <div class="container">
+        <div class="modal-content">
+
+        </div>
+    </div>
+    </div>
 
     <div class="container"></div>
 
