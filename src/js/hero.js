@@ -3,38 +3,24 @@ import { Navigation } from 'swiper/modules';
 
 document.addEventListener('DOMContentLoaded', () => {
   const heroSwiperElement = document.querySelector('.hero-slider');
-  const bannerTextElement = document.querySelector('.slider-banner-text');
 
-  if (heroSwiperElement && bannerTextElement) {
-    
-    const updateBannerText = (swiper) => {
-  
-      const activeSlide = swiper.slides[swiper.realIndex];
-      const textOnBanner = activeSlide.querySelector('.banner-text');
-      
-      if (textOnBanner) {
-        bannerTextElement.textContent = textOnBanner.textContent;
-      }
-    };
-
+  if (heroSwiperElement) {
     const heroSwiper = new Swiper(heroSwiperElement, {
       modules: [Navigation],
-      loop: true,
+      loop: true, 
       slidesPerView: 1,
       spaceBetween: 10,
 
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+        disabledClass: 'swiper-button-disabled', 
       },
 
       on: {
-        init: function (swiper) {
-          updateBannerText(swiper);
-        },
-        slideChange: function (swiper) {
-          updateBannerText(swiper);
-        },
+        // Якщо потрібно буде додати якусь логіку на зміну слайда, то можна буде тут  // slideChange: function (swiper) {
+        //   console.log('Slide changed to:', swiper.realIndex);
+        // },
       },
     });
   }
