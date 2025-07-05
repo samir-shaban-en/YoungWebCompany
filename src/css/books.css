@@ -1,0 +1,307 @@
+.books .container .books-wrapper {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .books .container .books-wrapper {
+        padding: 0 12px 0 28px;
+    }
+}
+
+.books .container .books-wrapper .title {
+    margin-bottom: 40px;
+}
+
+.books .container .books-wrapper .button {
+    border: 1px solid #0b0500;
+        border-radius: 4px;
+        padding: 8px 20px;
+        width: 227px;
+        height: 40px;
+        font-family: "Rubik", sans-serif;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 150%;
+            color: #0b0500;
+}
+
+.books .container .books-wrapper .button:hover {
+    cursor: pointer;
+    background-color: #e15d05;
+    color: white;
+}
+
+.books .container .books-wrapper .button:focus {
+    cursor: pointer;
+    background-color: #e15d05;
+    color: white;
+}
+
+.books .container .books-wrapper .list-books {
+    margin: 0 auto;
+}
+
+.books .container .books-wrapper .list-books.all-books-show {
+    display: flex;
+    justify-content: flex-start;
+    align-items: normal;
+    flex-wrap: wrap;
+    row-gap: 40px;
+    column-gap: 24px;
+}
+
+.books .container .books-wrapper .list-books .category-name {
+    display: block;
+    margin-bottom: 18px;
+    color: #B4AFAF;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.books .container .books-wrapper .list-books .subject,
+.books .container .books-wrapper .list-books .price
+ {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 150%;
+    text-transform: capitalize;
+    color: #0b0500;
+
+}
+
+.books .container .books-wrapper .list-books .author {
+    font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #0b0500;
+}
+
+
+.books .container .books-wrapper .list-books .book-info {
+    position: relative;
+    width: 100%;
+}
+
+
+.books .container .books-wrapper .list-books .book-info:hover {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.books .container .books-wrapper .list-books .book-info:focus {
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+
+@media screen and (min-width: 768px) {
+    .books .container .books-wrapper .list-books .book-info {
+        max-width: 218px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .books .container .books-wrapper .list-books .book-info {
+        max-width: 227px;
+    }
+}
+
+.books .container .books-wrapper .list-books .book-info .subject {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.books .container .books-wrapper .list-books .book-info .book-cover {
+    position: relative;
+    max-width: 335px;
+    width: 100%;
+    max-height: 485px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+@media screen and (min-width: 768px) {
+    .books .container .books-wrapper .list-books .book-info .book-cover {
+        max-width: 227px;
+        max-height: 316px;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .books .container .books-wrapper .list-books .book-info .book-cover {
+        max-width: 227px;
+        max-height: 256px;
+    }
+}
+@media screen and (min-width: 1060px) {
+    .books-list-placeholder{
+        min-width: 1004px;
+    }
+}
+
+.book-cover {
+    z-index: 2;
+}
+
+
+@media screen and (min-width: 768px) {
+    .categories-books {
+        max-width: 768px;
+        display: flex;
+        column-gap: 32px;
+        padding: 40px 32px 100px 32px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .categories-books {
+        max-width: 308px;
+        width: 100%;
+        display: block;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .books .container .books-wrapper {
+        display: flex;
+        max-width: 1440px;
+        margin: 0 auto;
+        column-gap: 24px;
+    }
+}
+
+.categories-books {
+    max-width: 308px;
+    color: rgba(17, 17, 17, 0.6);
+}
+
+.categories-books .container-categories {
+    margin: 0 auto;
+    max-width: 335px;
+    width: 100%;
+    height: 228px;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    overflow-y: scroll;
+}
+
+.categories-books .container-categories::-webkit-scrollbar {
+    width: 8px;
+    background-color: #B4AFAF;
+}
+
+.categories-books .container-categories::-webkit-scrollbar-thumb {
+    background-color: rgba(17, 17, 17, 0.6);
+}
+
+@media screen and (min-width: 768px) {
+    .categories-books .container-categories {
+        max-width: 337px;
+        height: 472px;
+        font-size: 18px;
+        line-height: 1.33;
+        overflow-y:visible;
+        
+    }
+}
+
+@media screen and (min-width: 1060px) {
+    .categories-books .container-categories {
+        max-width: 356px;
+        height: 472px;
+    }
+}
+
+.categories-books .container-categories .categories {
+    margin-bottom: 40px;
+}
+
+.categories-books .container-categories .categories .item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: "Rubik", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #0b0500;
+}
+
+.categories-books .container-categories .categories .item:hover {
+    cursor: pointer;
+    font-weight: 700;
+    transform: scaleY(1.1);
+    transition: font-weight 250ms linear;
+}
+
+.categories-books .container-categories .categories .item:focus {
+    cursor: pointer;
+    font-weight: 700;
+    transform: scaleY(1.1);
+    transition: font-weight 250ms linear;
+}
+
+.categories-books .container-categories .categories .active {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #e15d05;
+}
+
+.categories-books .container-categories .categories .item:first-child~.item {
+    padding-top: 8px;
+}
+
+.load-more {
+    font-family: "Rubik", sans-serif;
+    background-color: #e15d05;
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 91px;
+    height: 40px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    border: none;
+    display: none;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.books-subtitle-placeholder{
+    display:flex;
+    justify-content: space-between;
+}
+.books-subtitle-placeholder h2 {
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+        font-size: 20px;
+        line-height: 150%;
+        color: #000;
+        margin-bottom: 24px;
+}
+.books-subtitle-placeholder div{
+    font-family: "Rubik", sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 150%;
+        color: #000;
+        margin-right: 10px;
+        margin-top: 7px;
+}
+.books h1{
+    visibility:hidden;
+}
+.book-content{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+}
