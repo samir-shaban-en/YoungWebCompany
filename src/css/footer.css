@@ -45,11 +45,27 @@
   flex-direction: column;
   align-items: flex-start;
 }
+.title-footer {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
 
-.footer-form {
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.input-btn-wrap {
   display: flex;
-  margin-top: 16px;
   gap: 16px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+@media only screen and (max-width: 374px) {
+  .title-footer {
+    text-align: center;
+  }
+}
+.footer-form {
+  margin-top: 16px;
 }
 
 .footer-input {
