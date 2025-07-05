@@ -97,6 +97,9 @@
   .location-block {
     margin-bottom: 80px;
   }
+  iframe {
+    height: 738px;
+  }
 }
 @media (min-width: 1440px) {
   .location-block {
