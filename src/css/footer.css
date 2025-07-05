@@ -43,10 +43,9 @@
 .footer-part-second {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
 }
 .title-footer {
-  display: block;
+  display: inline-block;
   font-weight: 600;
   font-size: 16px;
 
@@ -59,11 +58,7 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-@media only screen and (max-width: 374px) {
-  .title-footer {
-    text-align: center;
-  }
-}
+
 .footer-form {
   margin-top: 16px;
 }
@@ -88,6 +83,7 @@
   height: 48px;
   background: transparent;
   transition: all 0.3s ease;
+  color: #0b0500;
 }
 
 .footer-btn:hover {
@@ -142,4 +138,13 @@
 
 .footer-input.invalid {
   border-color: red;
+}
+@media only screen and (max-width: 374px) {
+  .footer-part-second {
+    align-items: center;
+  }
+  .title-footer {
+    display: block;
+    text-align: center;
+  }
 }
