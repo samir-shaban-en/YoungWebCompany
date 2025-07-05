@@ -11,6 +11,7 @@
 .location-text {
   flex: 1;
   min-width: 300px;
+  margin-bottom: 32px;
 }
 
 .location-title {
