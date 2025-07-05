@@ -55,7 +55,7 @@
 .input-btn-wrap {
   display: flex;
   gap: 16px;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -146,5 +146,8 @@
   .title-footer {
     display: block;
     text-align: center;
+  }
+  .input-btn-wrap {
+    flex-wrap: wrap;
   }
 }
