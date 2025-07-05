@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booksy</title>
     <script type="module" crossorigin src="/YoungWebCompany/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-B1Qx91K4.js">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-DMjVsepR.css">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-Cdb5whaa.css">
+    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-84iecvJk.js">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-CxdlteEm.css">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-CVdhDEoV.css">
   </head>
   <body>
     <header>
@@ -121,8 +121,151 @@
   </div>
 </section>
 
-      <section>
-  <div class="container"></div>
+      <section class="events-section">
+  <div class="container events-container">
+    <div class="events-wrapper">
+      <p class="events-section-title">Events</p>
+      <h2 class="events-title">Upcoming Events at Booksy</h2>
+      <p class="events-description">
+        Discover readings, workshops, and bookish gatherings — online and
+        offline. Everyone’s welcome.
+      </p>
+    </div>
+
+    <div class="events-gallery swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div>
+            <picture>
+              <source
+                srcset="../img/events-images/events-card1@1x.png 1x, ../img/events-images/events-card1@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="../img/events-images/events-card1@1x.png 1x, ../img/events-images/events-card1@2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="../img/events-images/events-card1@1x.png 1x, ../img/events-images/events-card1@2x.png 2x"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="../img/events-images/events-card1@1x.png"
+                alt="Cozy Book Club"
+                id="card1"
+              />
+            </picture>
+            <div class="events-card-info-wrapper1">
+              <h3 class="events-subtitle">
+                Cozy Book Club — “The Midnight Library”
+              </h3>
+              <p class="events-card-date">In-store | June 5, 6:30 PM</p>
+              <p class="events-card-description">
+                Join us for an evening of tea, thoughtful conversation, and
+                shared reflections as we dive into Matt Haig’s bestseller.
+              </p>
+            </div>
+            <a class="events-card-link" id="card-link1" href="">
+              Register
+              <svg class="" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <picture>
+              <source
+                srcset="../img/events-images/events-card2@1x.png 1x, ../img/events-images/events-card2@2x.png 2x"
+                media="(min-width: 1440px)"
+              />
+              <source
+                srcset="../img/events-images/events-card2@1x.png 1x, ../img/events-images/events-card2@2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="../img/events-images/events-card2@1x.png 1x, ../img/events-images/events-card2@2x.png 2x"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="../img/events-images/events-card2@1x.png"
+                alt="Book Cover Design Workshop"
+                id="card2"
+              />
+            </picture>
+            <div class="events-card-info-wrapper2">
+              <h3 class="events-subtitle">Book Cover Design Workshop</h3>
+              <p class="events-card-date">Online | June 12, 7:00 PM</p>
+              <p class="events-card-description">
+                A hands-on session for aspiring designers and curious readers.
+                Learn what makes a cover stand out — from concept to print.
+              </p>
+            </div>
+            <a class="events-card-link" id="card-link2" href="">
+              Register
+              <svg class="" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div>
+            <picture>
+              <source
+                srcset="../img/events-images/events-card3@1x.png 1x, ../img/events-images/events-card3@2x.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="../img/events-images/events-card3@1x.png 1x, ../img/events-images/events-card3@2x.png 2x"
+                media="(min-width: 768px)"
+              />
+              <source
+                srcset="../img/events-images/events-card3@1x.png 1x, ../img/events-images/events-card3@2x.png 2x"
+                media="(max-width: 768px)"
+              />
+              <img
+                src="../img/events-images/events-card3@1x.png"
+                alt="Children’s Story Hour"
+                id="card3"
+              />
+            </picture>
+            <div class="events-card-info-wrapper3">
+              <h3 class="events-subtitle">Children’s Story Hour</h3>
+              <p class="events-card-date">In-store | June 15, 11:00 AM</p>
+              <p class="events-card-description">
+                A magical morning of stories, games, and imagination for our
+                youngest book lovers (ages 4–8).
+              </p>
+            </div>
+            <a class="events-card-link" id="card-link3" href=""
+              >Register
+              <svg class="" width="24" height="24">
+                <use href="../img/symbol-defs.svg#icon-chevron-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="events-interactive-wrapper">
+      <div class="events-dots-wrapper swiper-pagination"></div>
+      <div class="events-arrows-wrapper">
+        <button class="events-arrow button-prev">
+          <svg class="" width="24" height="24">
+            <use href="../img/symbol-defs.svg#icon-left-arrow-alt"></use>
+          </svg>
+        </button>
+        <button class="events-arrow button-next">
+          <svg class="" width="24" height="24">
+            <use href="../img/symbol-defs.svg#icon-right-arrow-alt"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </div>
 </section>
 
       <section class="article-section">
