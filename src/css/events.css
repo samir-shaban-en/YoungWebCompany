@@ -1,0 +1,276 @@
+.events-section {
+  padding: 64px 0;
+}
+
+.events-container {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.events-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-width: 343px;
+}
+
+.events-section-title {
+  font-weight: 600;
+  line-height: 150%;
+}
+
+.events-title {
+  font-size: 36px;
+  line-height: 120%;
+  min-width: 343px;
+}
+
+.events-description {
+  font-size: 18px;
+  line-height: 150%;
+  min-width: 343px;
+}
+
+.events-gallery > div {
+  display: flex;
+}
+
+#card1,
+#card2,
+#card3 {
+  border-radius: 16px;
+  max-width: 342px;
+  min-height: 277px;
+}
+
+.events-card-info-wrapper1,
+.events-card-info-wrapper2,
+.events-card-info-wrapper3 {
+  margin: 24px 0;
+  min-width: 242px;
+}
+
+/* .events-card-info-wrapper2,
+.events-card-info-wrapper3 {
+  display: none;
+} */
+
+.events-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: -0.01em;
+  max-width: 342px;
+}
+
+.events-card-date {
+  line-height: 150%;
+  margin-bottom: 8px;
+  max-width: 342px;
+}
+
+.events-card-description {
+  line-height: 150%;
+  margin-bottom: 16px;
+  max-width: 342px;
+}
+
+.events-card-link {
+  line-height: 150%;
+  margin-top: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.events-interactive-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-width: 342px;
+}
+
+.events-dots-wrapper {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.swiper-pagination-bullet {
+  background: #0b0500;
+  opacity: 0.2;
+  width: 8px;
+  height: 8px;
+  display: block;
+  border-radius: 50%;
+}
+
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  display: block;
+}
+
+.events-arrows-wrapper {
+  display: flex;
+  gap: 16px;
+}
+
+.events-arrow {
+  border: 1px solid #0b050026;
+  padding: 12px;
+  width: 48px;
+  height: 48px;
+  background-color: #e15d05;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: transparent;
+  fill: #fff;
+}
+.events-arrow:focus-visible:enabled,
+.events-arrow:hover:enabled {
+  background-color: #fceee6;
+  fill: #0b0500;
+}
+
+.events-arrow:active:enabled {
+  background-color: #5a2502;
+}
+
+.events-arrow:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.swiper {
+  width: 342px;
+  height: 521px;
+}
+
+.swiper-slide > div {
+  display: flex;
+  flex-direction: column;
+  height: 520px;
+}
+
+/* ========================================================================================================================================================
+  
+  ======================================================================================================================================================== */
+
+@media only screen and (min-width: 768px) {
+  .events-title {
+    min-width: 768px;
+  }
+
+  .events-description {
+    max-width: 560px;
+  }
+
+  .events-gallery {
+    display: flex;
+    gap: 24px;
+  }
+
+  .events-card-info-wrapper2 {
+    display: block;
+  }
+
+  #card1,
+  #card2,
+  #card3 {
+    max-width: 100%;
+  }
+
+  #card2 {
+    display: block;
+  }
+
+  .events-subtitle {
+    max-width: 340px;
+  }
+
+  .events-card-date {
+    max-width: 340px;
+  }
+
+  .events-card-description {
+    max-width: 340px;
+  }
+
+  .events-card-link {
+    line-height: 150%;
+  }
+
+  #card-link2 {
+    display: flex;
+  }
+
+  .events-interactive-wrapper {
+    min-width: 704px;
+  }
+
+  .swiper {
+    width: 704px;
+  }
+}
+
+/* ========================================================================================================================================================
+  
+  ======================================================================================================================================================== */
+
+@media only screen and (min-width: 1440px) {
+  .events-title {
+    font-size: 48px;
+  }
+
+  .events-card-info-wrapper3 {
+    display: block;
+  }
+
+  #card3 {
+    display: block;
+  }
+
+  .events-subtitle {
+    max-width: 421px;
+  }
+
+  .events-card-date {
+    max-width: 421px;
+  }
+
+  .events-card-description {
+    max-width: 421px;
+  }
+
+  #card-link3 {
+    display: flex;
+  }
+
+  .events-interactive-wrapper {
+    display: none;
+  }
+
+  .events-card-link {
+    line-height: 150%;
+    margin-top: auto;
+    display: flex;
+    gap: 8px;
+  }
+
+  .swiper {
+    width: 100%;
+    height: auto;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    gap: 24px;
+    transform: none;
+  }
+
+  .swiper-slide {
+    flex: 1 1 0;
+    width: auto;
+  }
+}
