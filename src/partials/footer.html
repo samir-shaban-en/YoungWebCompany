@@ -1,4 +1,4 @@
-<footer>
+<footer class="footer">
   <div class="container">
     <div class="container-footer">
       <div class="footer-part-first">
@@ -22,13 +22,18 @@
       </div>
       <div class="footer-part-second">
         <h3 class="title-footer">Join</h3>
-        <input
-          type="email"
-          name="footer-input"
-          placeholder="Enter your email"
-          class="footer-input"
-        />
-        <button type="submit" class="footer-btn">Sign Up</button>
+        <form class="footer-form">
+          <input
+            type="email"
+            name="footer-input"
+            placeholder="Enter your email"
+            class="footer-input"
+            required
+            pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          />
+          <span id="errorMessage" style="color: red" hidden>Error text</span>
+          <button type="submit" class="footer-btn">Sign Up</button>
+        </form>
         <span class="footer-span-requried">* Required field </span>
       </div>
     </div>
