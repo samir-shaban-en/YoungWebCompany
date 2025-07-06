@@ -55,7 +55,7 @@ function bookModalMarkup(obj) {
   const modalMarkup = `      
         <button class="modal_close-btn">
           <svg width="16" height="16">
-            <use href="/img/symbol-defs.svg#icon-x"></use>
+            <use href="#icon-x"></use>
           </svg>
         </button>
           <picture class="modal-books_picture" id="bookPicture">
@@ -117,7 +117,7 @@ function bookModalMarkup(obj) {
                 <button type="button" class="ac-trigger">
                   Details
                   <svg class="chevron-icon">
-                    <use href="/img/symbol-defs.svg#icon-chevron-up"></use>
+                    <use href="#icon-chevron-up"></use>
                   </svg>
                 </button>
               </h2>
@@ -130,7 +130,7 @@ function bookModalMarkup(obj) {
               <h2 class="ac-header">
                 <button type="button" class="ac-trigger">
                   Shipping<svg class="chevron-icon">
-                    <use href="/img/symbol-defs.svg#icon-chevron-up"></use>
+                    <use href="#icon-chevron-up"></use>
                   </svg>
                 </button>
               </h2>
@@ -143,7 +143,7 @@ function bookModalMarkup(obj) {
               <h2 class="ac-header">
                 <button type="button" class="ac-trigger">
                   Returns<svg class="chevron-icon">
-                    <use xlink:href="/img/symbol-defs.svg#icon-chevron-up"></use>
+                    <use href="#icon-chevron-up"></use>
                   </svg>
                 </button>
               </h2>
