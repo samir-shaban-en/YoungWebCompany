@@ -23,6 +23,7 @@
             font-size: 16px;
             line-height: 150%;
             color: #0b0500;
+            background-color: transparent;
 }
 
 .books .container .books-wrapper .button:hover {
@@ -86,13 +87,13 @@
 
 
 .books .container .books-wrapper .list-books .book-info:hover {
-    cursor: pointer;
+    
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
 
 .books .container .books-wrapper .list-books .book-info:focus {
-    cursor: pointer;
+    
     border-radius: 10px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 }
@@ -215,7 +216,7 @@
 @media screen and (min-width: 1060px) {
     .categories-books .container-categories {
         max-width: 356px;
-        height: 472px;
+        height: 100%;
     }
 }
 
@@ -280,7 +281,7 @@
     display:flex;
     justify-content: space-between;
 }
-.books-subtitle-placeholder h2 {
+.books-subtitle-placeholder h3 {
     font-family: "Rubik", sans-serif;
     font-weight: 600;
         font-size: 20px;
@@ -297,7 +298,7 @@
         margin-right: 10px;
         margin-top: 7px;
 }
-.books h1{
+.books h2{
     visibility:hidden;
 }
 .book-content{
