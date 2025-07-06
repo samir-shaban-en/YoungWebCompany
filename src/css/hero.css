@@ -1,0 +1,271 @@
+.hero-text {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    color: #fff;
+    padding-top: 90px;
+    padding-left: 16px;
+    margin-bottom: 16px;
+    width: 172px;
+}
+
+.hero-text3 span {
+    display: block;
+    width: 250px;
+}
+
+.hero-text4 {
+    width: 240px;
+}
+
+.hero-btn {
+    font-size: 8px;
+    color: var(--color-white);
+    border: 0.52px solid var(--color-bamboo);
+    border-radius: 2px;
+    width: 117px;
+    height: 20px;
+    background-color: var(--color-bamboo);
+    margin-left: 16px;
+    margin-bottom: 16px;
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+    background-color: var(--color-white);
+    color: var(--color-neutral-darkest);
+    border: 1px solid var(--color-neutral-darkest);
+}
+
+.swiper-btn-prev,
+.swiper-btn-next {
+    display: none;
+}
+
+.hero-title {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    color: var(--color-neutral-darkest);
+    padding-bottom: 32px;
+}
+
+.swiper-slide {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+    margin-bottom: 24px;
+}
+
+.slide1 {
+    background-image: url('/img/hero-img/hero-banner-1-x1-mob.png');
+}
+
+.slide2 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x1-mob.png');
+}
+
+.slide3 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x1-mob.png');
+}
+
+.slide4 {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x1-mob.png');
+}
+
+@media (min-resolution: 2x) {
+    .slide1 {
+        background-image: url('/img/hero-img/hero-banner-1-x2-mob.png');
+    }
+
+    .slide2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x2-mob.png');
+    }
+
+    .slide3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x2-mob.png');
+    }
+
+    .slide4 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x2-mob.png');
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text {
+        font-size: 32px;
+        line-height: 1.2;
+        padding-top: 118px;
+        padding-left: 40px;
+        width: 290px;
+    }
+
+    .hero-text3 span {
+        width: 350px;
+    }
+
+    .hero-text4 {
+        width: 390px;
+    }
+
+    .hero-btn {
+        font-size: 16px;
+        border: 1px solid var(--color-bamboo);
+        border-radius: 4px;
+        width: 164px;
+        height: 32px;
+        margin-left: 40px;
+        margin-bottom: 32px;
+    }
+
+    .hero-title {
+        width: 560px;
+    }
+
+    .swiper-slide {
+        border-radius: 0%;
+    }
+
+    .swiper-btn-container {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .swiper-btn-prev,
+    .swiper-btn-next {
+        background-color: var(--color-bamboo);
+        width: 48px;
+        height: 48px;
+        border: 1px solid rgba(11, 5, 0, 0.15);
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        justify-content: center;
+        position: static;
+        color: var(--color-neutral-darkest);
+    }
+
+    .hero-svg {
+        fill: var(--color-neutral-darkest);
+        align-items: center;
+        width: 24px;
+        height: 24px;
+    }
+
+    .button-dis {
+        opacity: 0.5;
+        pointer-events: none;
+        cursor: default;
+    }
+
+    .slide1 {
+        background-image: url('/img/hero-img/hero-banner-1-x1-lpt.png');
+    }
+
+    .slide2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x1-lpt.png');
+    }
+
+    .slide3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x1-lpt.png');
+    }
+
+    .slide4 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x1-lpt.png');
+    }
+
+    @media (min-resolution: 2x) {
+        .slide1 {
+            background-image: url('/img/hero-img/hero-banner-1-x2-lpt.png');
+        }
+
+        .slide2 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x2-lpt.png');
+        }
+
+        .slide3 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x2-lpt.png');
+        }
+
+        .slide4 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x2-lpt.png');
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .hero-text {
+        font-size: 52px;
+        padding-top: 155px;
+        padding-left: 56px;
+        margin-bottom: 20px;
+        width: 450px;
+    }
+
+    .hero-text3 span {
+        width: 550px;
+    }
+
+    .hero-text4 {
+        width: 650px;
+    }
+
+    .hero-btn {
+        border: 1px solid var(--color-bamboo);
+        width: 227px;
+        height: 40px;
+        margin-left: 56px;
+        margin-bottom: 56px;
+    }
+
+    .hero-title {
+        font-size: 52px;
+        width: 1168px;
+    }
+
+    .swiper-slide {
+        border-radius: 16px;
+    }
+
+    .slide1 {
+        background-image: url('/img/hero-img/hero-banner-1-x1-deskt.png');
+    }
+
+    .slide2 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x1-deskt.png');
+    }
+
+    .slide3 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x1-deskt.png');
+    }
+
+    .slide4 {
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x1-deskt.png');
+    }
+
+    @media (min-resolution: 2x) {
+        .slide1 {
+            background-image: url('/img/hero-img/hero-banner-1-x2-deskt.png');
+        }
+
+        .slide2 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/img/hero-img/hero-banner-2-x2-deskt.png');
+        }
+
+        .slide3 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('/img/hero-img/hero-banner-3-x2-deskt.png');
+        }
+
+        .slide4 {
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('/img/hero-img/hero-banner-4-x2-deskt.png');
+        }
+    } }
+    
