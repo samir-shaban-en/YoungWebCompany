@@ -40,14 +40,15 @@
   letter-spacing: -0.01em;
   color: #fff;
   margin-bottom: 16px;
+  max-width: 172px;
 }
 .hero-btn {
   background-color: #e15d05;
   border: 0.52px solid #e15d05;
   border-radius: 2px;
-  padding: 4px 10px;
-  width: 117px;
-  height: 20px;
+  padding-inline: 38px;
+  padding-block: 4.31px;
+
   text-align: center;
   font-weight: 400;
   font-size: 8px;
@@ -68,8 +69,7 @@
   .hero-btn {
     border-radius: 4px;
     padding: 4px 20px;
-    width: 164px;
-    height: 32px;
+
     font-size: 16px;
   }
   .hero-nav-wrapper {
@@ -91,8 +91,6 @@
   }
   .hero-btn {
     padding: 8px 20px;
-    width: 227px;
-    height: 40px;
   }
   .hero-title {
     max-width: 100%;
