@@ -136,13 +136,15 @@
     .books .container .books-wrapper .list-books .book-info .book-cover {
         max-width: 227px;
         max-height: 316px;
+        min-height: 316px;
     }
 }
 
 @media screen and (min-width: 1060px) {
     .books .container .books-wrapper .list-books .book-info .book-cover {
         max-width: 227px;
-        max-height: 256px;
+        max-height: 316px;
+        min-height: 316px;
     }
 }
 @media screen and (min-width: 1060px) {
