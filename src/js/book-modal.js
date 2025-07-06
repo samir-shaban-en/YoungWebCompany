@@ -33,7 +33,6 @@ function CreateModal(response) {
                 To start a return, please contact our support team — we’ll guide
                 you through the process quickly and hassle-free.`,
     };
-    //openModal(refs.modalBooks);
     bookModalMarkup(bookObj);
   } catch (error) {
     console.error('Error loading:', error);

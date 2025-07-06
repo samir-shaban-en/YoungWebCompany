@@ -64,8 +64,8 @@ function stopPreloader() {
 }
 
 function getName(event) {
-  const categoryName = event.target.getAttribute('data-name');
-  let urlCategory = '';
+  let categoryName = event.target.getAttribute('data-name');
+
   if (categoryName === 'top-books') {
     startPreloader();
     getCategoryBooks(categoryName)
@@ -94,6 +94,60 @@ function makeCategories(response) {
     )
     .join('');
   refs.categoriesListRef.insertAdjacentHTML('beforeend', markupCategor);
+
+  if (window.innerWidth < 1060) createMobileCategories();
+}
+
+function createMobileCategories() {
+  const ul = refs.categoriesListRef;
+  const liItems = ul.querySelectorAll('li');
+
+  const customDropdown = document.createElement('div');
+  customDropdown.className = 'custom-dropdown';
+
+  const selected = document.createElement('div');
+  selected.className = 'selected';
+  selected.textContent = 'Select Category';
+
+  const dropdownList = document.createElement('ul');
+  dropdownList.className = 'dropdown-list';
+
+  liItems.forEach(li => {
+    const newLi = document.createElement('li');
+    newLi.textContent = li.textContent.trim();
+    newLi.setAttribute('data-name', li.getAttribute('data-name'));
+    dropdownList.appendChild(newLi);
+  });
+  customDropdown.appendChild(selected);
+  customDropdown.appendChild(dropdownList);
+
+  ul.parentNode.insertBefore(customDropdown, ul);
+
+  ul.style.display = 'none';
+
+  selected.addEventListener('click', () => {
+    dropdownList.style.display =
+      dropdownList.style.display === 'block' ? 'none' : 'block';
+  });
+
+  document.addEventListener('click', e => {
+    if (!customDropdown.contains(e.target)) {
+      dropdownList.style.display = 'none';
+    }
+  });
+
+  dropdownList.addEventListener('click', e => {
+    if (e.target.tagName === 'LI') {
+      selected.textContent = e.target.textContent.trim();
+      const value = e.target.getAttribute('data-name');
+      getName(e);
+      dropdownList.style.display = 'none';
+
+      // Здесь можно вызвать функцию, отправить AJAX или использовать значение дальше
+    }
+  });
+
+  refs.categoriesListenRef.removeEventListener('click', getName);
 }
 
 refs.booksBoxRef = document.querySelector('.js-list-books');
