@@ -15,7 +15,8 @@
   padding: 0;
   border: 0;
   min-height: 199px;
-
+}
+.hero-images {
   position: relative;
 }
 .hero-title-wrap {
