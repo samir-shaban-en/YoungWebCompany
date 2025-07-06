@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Booksy</title>
     <script type="module" crossorigin src="/YoungWebCompany/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-CBzYmfC2.js">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-yddL0Zwq.css">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-BP3Zjxjh.css">
+    <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-D7w5dY3u.js">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-CpDLb-7d.css">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-Cm3dv285.css">
   </head>
   <body>
     <header>
@@ -17,46 +17,123 @@
 
 
     <main>
-      <section class="hero">
-  <div class="container hero-container">
-    <div class="swiper hero-swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide slide1">
-          <h3 class="hero-text hero-text1">Get 10% off your first order</h3>
-          <button class="hero-btn">Shop Now!</button>
-        </div>
-        <div class="swiper-slide slide2">
-          <h3 class="hero-text hero-text2">Save 15% on some books</h3>
-          <button class="hero-btn">Shop Now!</button>
-        </div>
-        <div class="swiper-slide slide3">
-          <h3 class="hero-text hero-text3">Summer Sale!<span>Up to -40% discounts</span></h3>
-          <button class="hero-btn">Shop Now!</button>
-        </div>
-        <div class="swiper-slide slide4">
-          <h3 class="hero-text hero-text4">Last chance to buy our <span>spring bestsellers</span></h3>
-          <button class="hero-btn">Shop Now!</button>
-        </div>
-      </div>
-    </div>
+      <section class="hero-section">
+  <div class="container">
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <ul class="swiper-wrapper">
+        <!-- Slides -->
+        <li class="swiper-slide hero">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero-img/b1-mob.png 1x, ../img/hero-img/b1-mob@2x.png 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="../img/hero-img/b1-desk.png 1x, ../img/hero-img/b1-desk@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero-img/b1-tabl.png 1x, ../img/hero-img/b1-tabl@2x.png 2x"
+            />
 
-    <div class="swiper-btn-container">
-      <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
-      <!-- buttons -->
-      <div class="swiper-btn-prev">
-        <svg class="hero-svg" width="24" height="24">
-          <use href="/YoungWebCompany/assets/icon-hero-DxSZkTjt.svg#icon-left"></use>
-        </svg>
-      </div>
-      <div class="swiper-btn-next">
-        <svg class="hero-svg" width="24" height="24">
-          <use href="/YoungWebCompany/assets/icon-hero-DxSZkTjt.svg#icon-rigth"></use>
-        </svg>
+            <img src="../img/hero-img/b1-mob.png" alt="" />
+          </picture>
+
+          <div class="hero-picture-text">
+            <p class="hero-text">Get 10% off your first order</p>
+            <a href="#books" class="hero-btn" type="button">Shop Now!</a>
+          </div>
+        </li>
+        <li class="swiper-slide hero">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero-img/b2-mob.png 1x, ../img/hero-img/b2-mob@2x.png 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="../img/hero-img/b2-desk.png 1x, ../img/hero-img/b2-desk@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero-img/b2-tabl.png 1x, ../img/hero-img/b2-tabl@2x.png 2x"
+            />
+
+            <img src="../img/hero-img/b2-mob.png" alt="" />
+          </picture>
+          <div class="hero-picture-text">
+            <p class="hero-text">Save 15% on some books</p>
+            <a href="#books" class="hero-btn" type="button">Shop Now!</a>
+          </div>
+        </li>
+        <li class="swiper-slide hero">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero-img/b3-mob.png 1x, ../img/hero-img/b3-mob@2x.png 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="../img/hero-img/b3-desk.png 1x, ../img/hero-img/b3-desk@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero-img/b3-tabl.png 1x, ../img/hero-img/b3-tabl@2x.png 2x"
+            />
+
+            <img src="../img/hero-img/b3-mob.png" alt="" />
+          </picture>
+          <div class="hero-picture-text">
+            <p class="hero-text">Summer Sale! Up to -40% discounts</p>
+            <a href="#books" class="hero-btn" type="button">Shop Now!</a>
+          </div>
+        </li>
+        <li class="swiper-slide hero">
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/hero-img/b4-mob.png 1x, ../img/hero-img/b4-mob@2x.png 2x"
+            />
+            <source
+              media="(min-width: 1440px)"
+              srcset="../img/hero-img/b4-desk.png 1x, ../img/hero-img/b4-desk@2x.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/hero-img/b4-tabl.png 1x, ../img/hero-img/b4-tabl@2x.png 2x"
+            />
+
+            <img src="../img/hero-img/b4-mob.png" alt="" />
+          </picture>
+          <div class="hero-picture-text">
+            <p class="hero-text">Last chance to buy our spring bestsellers</p>
+            <a href="#books" class="hero-btn" type="button">Shop Now!</a>
+          </div>
+        </li>
+      </ul>
+      <div class="hero-title-wrap">
+        <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
+        <div class="hero-nav-wrapper hero-scroll-wrap">
+          <div class="swiper-button-prev scroll-btn hero-scroll">
+            <svg class="arrow-nav" width="24" height="24">
+              <use href="/YoungWebCompany/assets/symbol-defs-DGwDKin5.svg#icon-left-arrow-alt"></use>
+            </svg>
+          </div>
+          <div class="swiper-button-next scroll-btn hero-scroll">
+            <svg class="arrow-nav" width="24" height="24">
+              <use href="/YoungWebCompany/assets/symbol-defs-DGwDKin5.svg#icon-right-arrow-alt"></use>
+            </svg>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </section>
-      <section class="books">
+
+      <section class="books" id="books">
   <h2>Trending books</h2>
   <div class="container">
     <div class="books-wrapper">
@@ -64,25 +141,30 @@
         <div class="container-categories js-container">
           <div class="books-subtitle-placeholder">
             <h3>Books</h3>
-            <div>Showing <span class="current-number-books"></span>&nbsp;of&nbsp;<span class="total-number-books"></span></div>
+            <div>
+              Showing
+              <span class="current-number-books"></span>&nbsp;of&nbsp;<span
+                class="total-number-books"
+              ></span>
+            </div>
           </div>
           <ul class="list categories js-list-categories">
-            <li class="item" data-name="top-books" tabindex="0">All categories</li>
+            <li class="item" data-name="top-books" tabindex="0">
+              All categories
+            </li>
           </ul>
         </div>
       </div>
 
-
       <div class="books-list-placeholder">
-      <ul class="list list-books js-list-books all-books-show"></ul>
-      <span class="loader"></span>
-      <button type="button" class="load-more">Load more</button>
+        <ul class="list list-books js-list-books all-books-show"></ul>
+        <span class="loader"></span>
+        <button type="button" class="load-more">Load more</button>
       </div>
     </div>
-    
   </div>
-
 </section>
+
       <section class="feedbacks-section">
   <div class="container">
     <h2 class="feedback-title">Customer Feedbacks</h2>
@@ -190,9 +272,9 @@
 
     <div class="swiper">
       <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
+      <ul class="swiper-wrapper">
         <!-- Slides -->
-        <div class="swiper-slide events-slide">
+        <li class="swiper-slide events-slide">
           <img
             class="swiper-img"
             srcset="/YoungWebCompany/assets/events-card1@1x-EMt65Qj7.png 1x, /YoungWebCompany/assets/events-card1@2x-BXJn206H.png 2x"
@@ -212,8 +294,8 @@
               </svg>
             </button>
           </div>
-        </div>
-        <div class="swiper-slide events-slide">
+        </li>
+        <li class="swiper-slide events-slide">
           <img
             class="swiper-img"
             srcset="/YoungWebCompany/assets/events-card2@1x-2q5STDye.png 1x, /YoungWebCompany/assets/events-card2@2x-Cx0P7YlM.png 2x"
@@ -233,8 +315,8 @@
               </svg>
             </button>
           </div>
-        </div>
-        <div class="swiper-slide events-slide">
+        </li>
+        <li class="swiper-slide events-slide">
           <img
             class="swiper-img"
             srcset="/YoungWebCompany/assets/events-card3@1x-BAuZQNE_.png 1x, /YoungWebCompany/assets/events-card3@2x-DDvzr9DN.png 2x"
@@ -254,8 +336,8 @@
               </svg>
             </button>
           </div>
-        </div>
-      </div>
+        </li>
+      </ul>
 
       <div class="feedback-nav-wrapper event-btn">
         <div class="my-swiper"></div>
