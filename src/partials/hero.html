@@ -1,88 +1,39 @@
-
-  <section class="hero">
-    <div class="container">
-      <div class="hero-slider swiper">
-        <ul class="hero-banners swiper-wrapper">
-          <li class="hero-banner-item swiper-slide">
-            <a href="#books" class="hero-banner-link" aria-label="Shop Now!">
-              <picture>
-                <source
-                  srcset="/img/hero-img/hero-banner-1-x1-deskt.png 1x, /img/hero-img/hero-banner-1-x2-deskt.png 2x"
-                  media="(min-width: 1440px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-1-x1-lpt.png 1x, /img/hero-img/hero-banner-1-x2-lpt.png 2x"
-                  media="(min-width: 768px) and (max-width: 1439px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-1-x1-mob.png 1x, /img/hero-img/hero-banner-1-x2-mob.png 2x"
-                  media="(max-width: 767px)" type="image/png">
-                <img src="/img/hero-img/hero-banner-1-x1-deskt.png" alt="Акційний банер: Знижка 10% на перше замовлення"
-                  class="hero-banner-image">
-              </picture>
-            </a>
-          </li>
-          <li class="hero-banner-item swiper-slide">
-            <a href="#books" class="hero-banner-link" aria-label="Shop Now!">
-              <picture>
-                <source
-                  srcset="/img/hero-img/hero-banner-2-x1-deskt.png 1x, /img/hero-img/hero-banner-2-x2-deskt.png 2x"
-                  media="(min-width: 1440px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-2-x1-lpt.png 1x, /img/hero-img/hero-banner-2-x2-lpt.png 2x"
-                  media="(min-width: 768px) and (max-width: 1439px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-2-x1-mob.png 1x, /img/hero-img/hero-banner-2-x2-mob.png 2x"
-                  media="(max-width: 767px)" type="image/png">
-                <img src="/img/hero-img/hero-banner-2-x1-deskt.png" alt="Акційний банер: Знижка 15% на деякі книги"
-                  class="hero-banner-image">
-              </picture>
-            </a>
-          </li>
-          <li class="hero-banner-item swiper-slide">
-            <a href="#books" class="hero-banner-link" aria-label="Shop Now!">
-              <picture>
-                <source
-                  srcset="/img/hero-img/hero-banner-3-x1-deskt.png 1x, /img/hero-img/hero-banner-3-x2-deskt.png 2x"
-                  media="(min-width: 1440px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-3-x1-lpt.png 1x, /img/hero-img/hero-banner-3-x2-lpt.png 2x"
-                  media="(min-width: 768px) and (max-width: 1439px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-3-x1-mob.png 1x, /img/hero-img/hero-banner-3-x2-mob.png 2x"
-                  media="(max-width: 767px)" type="image/png">
-                <img src="/img/hero-img/hero-banner-3-x1-deskt.png" alt="Акційний банер: До 40% на літні читання"
-                  class="hero-banner-image">
-              </picture>
-            </a>
-          </li>
-          <li class="hero-banner-item swiper-slide">
-            <a href="#books" class="hero-banner-link" aria-label="Shop Now!">
-              <picture>
-                <source
-                  srcset="/img/hero-img/hero-banner-4-x1-deskt.png 1x, /img/hero-img/hero-banner-4-x2-deskt.png 2x"
-                  media="(min-width: 1440px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-4-x1-lpt.png 1x, /img/hero-img/hero-banner-4-x2-lpt.png 2x"
-                  media="(min-width: 768px) and (max-width: 1439px)" type="image/png">
-                <source srcset="/img/hero-img/hero-banner-4-x1-mob.png 1x, /img/hero-img/hero-banner-4-x2-mob.png 2x"
-                  media="(max-width: 767px)" type="image/png">
-                <img src="/img/hero-img/hero-banner-4-x1-deskt.png"
-                  alt="Акційний банер: Останній шанс купити весняні бестселери" class="hero-banner-image">
-              </picture>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="slider-bottom-controls">
-        <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
-        <div class="slider-navigation-buttons">
-          <button type="button" class="slider-button prev-button swiper-button-prev" aria-label="Попередній банер">
-            <svg width="24" height="24">
-              <use href="./img/hero-img/icon-hero.svg#icon-left"></use>
-            </svg>
-          </button>
-          <button type="button" class="slider-button next-button swiper-button-next" aria-label="Наступний банер">
-            <svg width="24" height="24">
-              <use href="./img/hero-img/icon-hero.svg#icon-rigth"></use>
-            </svg>
-          </button>
+<section class="hero">
+  <div class="container hero-container">
+    <div class="swiper hero-swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide slide1">
+          <h3 class="hero-text hero-text1">Get 10% off your first order</h3>
+          <button class="hero-btn">Shop Now!</button>
+        </div>
+        <div class="swiper-slide slide2">
+          <h3 class="hero-text hero-text2">Save 15% on some books</h3>
+          <button class="hero-btn">Shop Now!</button>
+        </div>
+        <div class="swiper-slide slide3">
+          <h3 class="hero-text hero-text3">Summer Sale!<span>Up to -40% discounts</span></h3>
+          <button class="hero-btn">Shop Now!</button>
+        </div>
+        <div class="swiper-slide slide4">
+          <h3 class="hero-text hero-text4">Last chance to buy our <span>spring bestsellers</span></h3>
+          <button class="hero-btn">Shop Now!</button>
         </div>
       </div>
-
     </div>
-  </section>
 
-  
+    <div class="swiper-btn-container">
+      <h1 class="hero-title">Discover Your Next Great Read Today!</h1>
+      <!-- buttons -->
+      <div class="swiper-btn-prev">
+        <svg class="hero-svg" width="24" height="24">
+          <use href="./img/hero-img/icon-hero.svg#icon-left"></use>
+        </svg>
+      </div>
+      <div class="swiper-btn-next">
+        <svg class="hero-svg" width="24" height="24">
+          <use href="./img/hero-img/icon-hero.svg#icon-rigth"></use>
+        </svg>
+      </div>
+    </div>
+  </div>
+</section>
