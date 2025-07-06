@@ -24,28 +24,27 @@ const swiper = new Swiper('.swiper', {
 window.addEventListener('DOMContentLoaded', resizeHandler);
 
 window.addEventListener('resize', resizeHandler);
-
+console.log(swiper);
 function resizeHandler() {
   const width = window.innerWidth;
-
+  console.log(width);
   if (width >= 1440) {
-    swiper[0].params.slidesPerView = 3;
-    swiper[0].update();
-
     swiper[1].params.slidesPerView = 3;
     swiper[1].update();
-  } else if (width >= 768) {
-    swiper[0].params.slidesPerView = 2;
-    swiper[0].update();
 
+    swiper[2].params.slidesPerView = 3;
+    swiper[2].update();
+  } else if (width >= 768) {
     swiper[1].params.slidesPerView = 2;
     swiper[1].update();
-    console.log('h');
-  } else if (width < 768) {
-    swiper[0].params.slidesPerView = 1;
-    swiper[0].update();
 
+    swiper[2].params.slidesPerView = 2;
+    swiper[2].update();
+  } else if (width < 768) {
     swiper[1].params.slidesPerView = 1;
     swiper[1].update();
+
+    swiper[2].params.slidesPerView = 1;
+    swiper[2].update();
   }
 }
