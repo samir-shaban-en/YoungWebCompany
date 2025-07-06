@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', function () {
-  const modal = document.getElementById('modal');
+  const modal = document.getElementById('contact-modal');
   const closeBtn = document.getElementById('closeModalBtn');
   const openModalBtns = document.querySelectorAll('.open-modal');
-  const form = document.querySelector('.modal-form');
 
-  if (!form) return;
+  const form = document.querySelector('.contact-modal-form');
+
+  if (!form || !modal || !closeBtn) return;
 
   openModalBtns.forEach(btn => {
     btn.addEventListener('click', e => {
