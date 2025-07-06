@@ -22,6 +22,7 @@ let currentPage = 1;
 
 let currentRenderWidth = window.innerWidth;
 let amountRenderedBooks = 10;
+let booksShowed = 0;
 
 addEventListener('resize', () => {
   if (
@@ -110,6 +111,7 @@ function markupTopBooks(response) {
   }
   console.log(booksData);
   currentPage = 1;
+  booksShowed = 0;
   showBooks();
   stopPreloader();
   startOpenModal();
@@ -124,6 +126,7 @@ function setAllBooksAfterClick(response) {
   booksData = response.data;
   console.log(booksData);
   currentPage = 1;
+  booksShowed = 0;
   showBooks();
   stopPreloader();
   startOpenModal();
@@ -138,6 +141,7 @@ function showBooks() {
   for (const book of sliceBooks) {
     let markupInner = renderBook(book);
     sumAllBooks += markupInner;
+    booksShowed++;
   }
   refs.booksBoxRef.insertAdjacentHTML('beforeend', sumAllBooks);
   if (currentPage * amountRenderedBooks < booksData.length) {
@@ -147,10 +151,7 @@ function showBooks() {
   }
   refs.totalBooks.textContent = booksData.length;
 
-  refs.currentBooksShowed.textContent =
-    currentPage * amountRenderedBooks > booksData.length
-      ? booksData.length
-      : amountRenderedBooks * currentPage;
+  refs.currentBooksShowed.textContent = booksShowed;
 }
 
 function setStatusActive(categoryName) {
@@ -166,9 +167,9 @@ function setStatusActive(categoryName) {
 }
 
 function renderBook(book) {
-  return ` <li class="item book-info modal-open" tabindex="0" id="${book._id}">
+  return ` <li class="item book-info " tabindex="0" >
 	<div class="book-cover">
-			 <img src="${book.book_image}" alt="${book.title}" class="img" loading="lazy">
+			 <img src="${book.book_image}" alt="${book.title}" class="img">
 	</div>
   <div class="book-content">
 	<p class="subject">${book.title.toLowerCase()}</p>
@@ -176,7 +177,7 @@ function renderBook(book) {
   </div>
 	<p class="author">${book.author}</p>
     
-    <button class="button">Learn More</button>
+    <button class="button modal-open" id="${book._id}">Learn More</button>
 </li>`;
 }
 export function showLoadMoreButton() {
@@ -189,5 +190,6 @@ export function hideLoadMoreButton() {
 
 refs.btnloadMore.addEventListener('click', event => {
   currentPage += 1;
+  amountRenderedBooks = 5;
   showBooks();
 });
