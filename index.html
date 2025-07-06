@@ -8,7 +8,7 @@
     <script type="module" crossorigin src="/YoungWebCompany/index.js"></script>
     <link rel="modulepreload" crossorigin href="/YoungWebCompany/assets/vendor-CBzYmfC2.js">
     <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/vendor-yddL0Zwq.css">
-    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-CTFJhQCZ.css">
+    <link rel="stylesheet" crossorigin href="/YoungWebCompany/assets/index-BP3Zjxjh.css">
   </head>
   <body>
     <header>
@@ -205,7 +205,7 @@
               Join us for an evening of tea, thoughtful conversation, and shared
               reflections as we dive into Matt Haig’s bestseller.
             </p>
-            <button class="reg-btn">
+            <button class="reg-btn open-modal">
               Register
               <svg class="ev-btn" width="24" height="24">
                 <use href="/YoungWebCompany/assets/symbol-defs-DGwDKin5.svg#icon-chevron-right"></use>
@@ -226,7 +226,7 @@
               Join us for an evening of tea, thoughtful conversation, and shared
               reflections as we dive into Matt Haig’s bestseller.
             </p>
-            <button class="reg-btn">
+            <button class="reg-btn open-modal">
               Register
               <svg class="ev-btn" width="24" height="24">
                 <use href="/YoungWebCompany/assets/symbol-defs-DGwDKin5.svg#icon-chevron-right"></use>
@@ -247,7 +247,7 @@
               Join us for an evening of tea, thoughtful conversation, and shared
               reflections as we dive into Matt Haig’s bestseller.
             </p>
-            <button class="reg-btn">
+            <button class="reg-btn open-modal">
               Register
               <svg class="ev-btn" width="24" height="24">
                 <use href="/YoungWebCompany/assets/symbol-defs-DGwDKin5.svg#icon-chevron-right"></use>
@@ -422,7 +422,36 @@
     </div>
     </div>
 
-    <div class="container"></div>
+    <div class="container">
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn" id="closeModalBtn">&times;</span>
+      <h2 class="contact-modal-title">Register</h2>
+      <p class="contact-modal-text">Cozy Book Club – “The Midnight Library”</p>
+      <form class="modal-form">
+        <label for="name">Name*</label>
+        <input type="text" id="name" placeholder="Ann" required />
+
+        <label for="email">Email*</label>
+        <input
+          type="email"
+          id="email"
+          placeholder="hello@booksy.com"
+          required
+        />
+
+        <label for="message">Message</label>
+        <textarea
+          class="modal-textarea"
+          id="message"
+          placeholder="Type your message..."
+        ></textarea>
+
+        <button type="submit" class="register-btn">Register</button>
+      </form>
+    </div>
+  </div>
+</div>
 
 
   </body>
