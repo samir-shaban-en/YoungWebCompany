@@ -21,6 +21,23 @@ window.addEventListener('click', e => {
   }
 });
 
+const links = document.querySelectorAll('.nav-list a');
+
+links.forEach(link => {
+  link.addEventListener('click', (e) => {
+    const target = link.getAttribute('data-link');
+
+    
+    navModal.classList.remove('open');
+    burger.classList.remove('burger-hidden');
+    document.body.style.overflow = 'auto';
+
+    
+    setTimeout(() => {
+      window.location.href = target;
+    }, 200); 
+  });
+});
 
 
 
