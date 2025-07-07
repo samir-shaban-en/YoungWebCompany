@@ -2,6 +2,10 @@
     position: relative;
 }
 
+@media screen and (min-width: 768px) {
+    .books .container .books-wrapper {
+    }
+}
 
 .books .container .books-wrapper .title {
     margin-bottom: 40px;
