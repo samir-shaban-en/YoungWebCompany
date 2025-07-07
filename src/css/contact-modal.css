@@ -1,6 +1,6 @@
 /* #region mobile */
 
-.modal {
+.contact-modal {
   display: none;
   position: fixed;
   top: 0;
@@ -11,20 +11,28 @@
   justify-content: center;
   align-items: center;
   z-index: 1000;
+
+  /* Добавлено */
+  padding: 16px;
+  box-sizing: border-box;
 }
 
-.modal-content {
-  /* margin: 64px 16px; */
+.contact-modal-content {
+  position: relative;
   padding: 64px 16px;
   border-radius: 16px;
-  width: 343px;
+  width: 100%;
+  max-width: 343px;
+  max-height: 90vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: relative;
-  overflow: hidden;
+  align-items: center;
+  background-color: #fceee6;
+  overflow-y: auto;
 }
+
 .contact-modal-title {
   font-weight: 600;
   font-size: 48px;
@@ -32,6 +40,7 @@
   letter-spacing: -0.01em;
   text-align: center;
 }
+
 .contact-modal-text {
   font-weight: 400;
   font-size: 24px;
@@ -40,24 +49,30 @@
   text-align: center;
   padding-top: 16px;
 }
+
 .close-btn {
   position: absolute;
   top: 16px;
   right: 16px;
   font-size: 24px;
   cursor: pointer;
+  background: transparent;
+  border: none;
+  color: inherit;
 }
-.modal-form {
+
+.contact-modal-form {
   padding-top: 48px;
-  width: 311px;
-  flex-grow: 1;
+  width: 100%;
+  max-width: 311px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
-form input,
-form textarea {
+.contact-modal-form input,
+.contact-modal-form textarea {
   width: 100%;
   padding: 8px 12px;
   margin-top: 8px;
@@ -66,11 +81,13 @@ form textarea {
   border-radius: 6px;
   background-color: #f5e5dc;
 }
-.modal-textarea {
+
+.contact-modal-textarea {
   padding: 12px 12px;
   height: 180px;
 }
-.register-btn {
+
+.contact-modal-register-btn {
   background-color: #d94f00;
   color: #fff;
   border: none;
@@ -79,22 +96,25 @@ form textarea {
   border-radius: 4px;
   cursor: pointer;
 }
+
 /* #endregion mobile */
 
 /* #region tablet */
 @media (min-width: 768px) {
-  .modal-content {
+  .contact-modal-content {
     padding: 64px 32px;
-    width: 704px;
-    height: 760px;
+    width: 100%;
+    max-width: 704px;
+    height: auto;
+    max-height: 90vh;
   }
 
-  .modal-form {
-    width: 640px;
-    height: 476px;
+  .contact-modal-form {
+    width: 100%;
+    max-width: 640px;
   }
 
-  .register-btn {
+  .contact-modal-register-btn {
     display: block;
     width: 342px;
     height: 48px;
@@ -102,17 +122,20 @@ form textarea {
   }
 }
 /* #endregion tablet */
+
 /* #region desktop */
 @media (min-width: 1440px) {
-  .modal-content {
+  .contact-modal-content {
     padding: 64px;
-    width: 866px;
-    height: 760px;
+    width: 100%;
+    max-width: 866px;
+    height: auto;
+    max-height: 90vh;
   }
 
-  .modal-form {
-    width: 738px;
-    height: 476px;
+  .contact-modal-form {
+    width: 100%;
+    max-width: 738px;
   }
 }
 /* #endregion desktop */
