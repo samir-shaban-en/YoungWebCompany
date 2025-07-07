@@ -1,66 +1,34 @@
-import 'swiper/css';
-import 'swiper/css/navigation';
 
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-
-const swiper = new Swiper('.hero-swiper', {
-  loop: false,
-  speed: 600,
-  grabCursor: true,
-  slidesPerView: 1,
-  spaceBetween: 20,
-  modules: [Navigation],
-  navigation: {
-    nextEl: '.swiper-btn-next',
-    prevEl: '.swiper-btn-prev',
-  },
-  breakpoints: {
-    768: {
-      speed: 700,
+document.addEventListener('DOMContentLoaded', function() {
+  const heroSwiper = new Swiper('.hero-section .swiper', {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    loop: false, 
+    navigation: {
+      nextEl: '.hero-section .swiper-button-next',
+      prevEl: '.hero-section .swiper-button-prev',
     },
-    1440: {
-      speed: 800,
+    watchOverflow: true,
+
+    on: {
+      init: function () {
+        updateHeroNavigationButtons(this);
+      },
+      slideChange: function () {
+        updateHeroNavigationButtons(this);
+      },
+      resize: function () { 
+        updateHeroNavigationButtons(this);
+      },
     },
-  },
-
-  on: {
-    init: function () {
-      updateNavButtons(this);
-    },
-    slideChange: function () {
-      updateNavButtons(this);
-    },
-  },
-});
-
-function updateNavButtons(swiperIns) {
-  const prevBut = document.querySelector('.swiper-btn-prev');
-  const nextBut = document.querySelector('.swiper-btn-next');
-
-  if (swiperIns.isBeginning) {
-    prevBut.classList.add('button-dis');
-  } else {
-    prevBut.classList.remove('button-dis');
-  }
-
-  if (swiperIns.isEnd) {
-    nextBut.classList.add('button-dis');
-  } else {
-    nextBut.classList.remove('button-dis');
-  }
-}
-
-const heroButtons = document.querySelectorAll('.hero-btn');
-
-heroButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const target = document.querySelector('.books');
-    if (target) {
-      target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
   });
+
+  function updateHeroNavigationButtons(swiperInstance) {
+    const prevButton = document.querySelector('.hero-section .swiper-button-prev');
+    const nextButton = document.querySelector('.hero-section .swiper-button-next');
+
+    if (!prevButton || !nextButton) {
+      return;
+    }
+  }
 });
