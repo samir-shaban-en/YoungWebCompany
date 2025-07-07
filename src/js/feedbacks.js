@@ -9,6 +9,7 @@ const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
 
   spaceBetween: 25,
+
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev',
@@ -21,18 +22,29 @@ const swiper = new Swiper('.swiper', {
 });
 
 window.addEventListener('DOMContentLoaded', resizeHandler);
-window.addEventListener('resize', resizeHandler);
 
+window.addEventListener('resize', resizeHandler);
+console.log(swiper);
 function resizeHandler() {
   const width = window.innerWidth;
-  if (width < 768) {
-    swiper.params.slidesPerView = 1;
-    swiper.update();
-  } else if (width >= 1440) {
-    swiper.params.slidesPerView = 3;
-    swiper.update();
+  console.log(width);
+  if (width >= 1440) {
+    swiper[1].params.slidesPerView = 3;
+    swiper[1].update();
+
+    swiper[2].params.slidesPerView = 3;
+    swiper[2].update();
   } else if (width >= 768) {
-    swiper.params.slidesPerView = 2;
-    swiper.update();
+    swiper[1].params.slidesPerView = 2;
+    swiper[1].update();
+
+    swiper[2].params.slidesPerView = 2;
+    swiper[2].update();
+  } else if (width < 768) {
+    swiper[1].params.slidesPerView = 1;
+    swiper[1].update();
+
+    swiper[2].params.slidesPerView = 1;
+    swiper[2].update();
   }
 }

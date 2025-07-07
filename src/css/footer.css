@@ -1,1 +1,159 @@
+.footer {
+  background: #ea8d50;
+  padding: 80px 0 80px;
+}
 
+.container-footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-part-first {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+.logo-footer {
+  text-align: center;
+}
+
+.footer-nav-list {
+  margin-top: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.footer-nav-item {
+  transition: all 0.3s ease;
+}
+
+.footer-nav-item:hover {
+  opacity: 0.2;
+}
+
+.footer-part-second {
+  display: flex;
+  flex-direction: column;
+}
+.title-footer {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.input-btn-wrap {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.footer-form {
+  margin-top: 16px;
+}
+
+.footer-input {
+  border: 1px solid rgba(11, 5, 0, 0.15);
+  border-radius: 4px;
+  padding: 8px 12px;
+  width: 221px;
+  height: 48px;
+  background: rgba(11, 5, 0, 0.05);
+}
+
+.footer-input::placeholder {
+  color: rgba(11, 5, 0, 0.6);
+}
+
+.footer-btn {
+  border: 1px solid #0b0500;
+  border-radius: 4px;
+  padding: 12px 23px;
+  height: 48px;
+  background: transparent;
+  transition: all 0.3s ease;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: #0b0500;
+}
+
+.footer-btn:hover {
+  background: #0b0500;
+  color: #fff;
+}
+
+.footer-btn:focus {
+  background: #ea8d50;
+  color: #0b0500;
+}
+
+.footer-span-requried {
+  margin-top: 12px;
+  font-size: 12px;
+}
+
+.footer-rights {
+  text-align: center;
+  margin-top: 80px;
+  padding-top: 32px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+@media (min-width: 768px) {
+  .footer-nav-list {
+    flex-direction: row;
+  }
+
+  .footer-input {
+    width: 278px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container-footer {
+    flex-direction: row;
+    gap: 588px;
+  }
+
+  .footer-part-first {
+    align-items: flex-start;
+  }
+}
+
+.error-message {
+  display: none;
+  color: red;
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+.footer-input.invalid {
+  border-color: red;
+}
+@media only screen and (max-width: 374px) {
+  .footer-part-second {
+    align-items: center;
+  }
+  .title-footer {
+    display: block;
+    text-align: center;
+  }
+  .input-btn-wrap {
+    flex-wrap: wrap;
+  }
+}
