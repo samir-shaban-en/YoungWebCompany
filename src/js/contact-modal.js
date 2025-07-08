@@ -1,8 +1,10 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
 document.addEventListener('DOMContentLoaded', function () {
   const modal = document.getElementById('contact-modal');
   const closeBtn = document.getElementById('closeModalBtn');
   const openModalBtns = document.querySelectorAll('.open-modal');
-
   const form = document.querySelector('.contact-modal-form');
 
   if (!form || !modal || !closeBtn) return;
@@ -45,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!name.value.trim()) {
       markError(name, 'Name is required');
       isValid = false;
+    } else if (!isValidName(name.value)) {
+      markError(name, 'Please enter a valid name');
+      isValid = false;
     }
 
     if (!email.value.trim()) {
@@ -61,7 +66,12 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     if (isValid) {
-      alert('Form submitted successfully!');
+      iziToast.success({
+        title: 'Success',
+        message: 'Form submitted successfully!',
+        position: 'topRight',
+        timeout: 3000,
+      });
       form.reset();
       closeModal();
     }
@@ -71,8 +81,28 @@ document.addEventListener('DOMContentLoaded', function () {
     return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
   }
 
+  function isValidName(name) {
+    const cleaned = name.trim();
+
+    const allowedChars = /^[A-Za-zА-Яа-яЁё\s\-]+$/;
+    const hasVowel = /[aeiouаеёиоуыэюя]/i;
+
+    return (
+      cleaned.length >= 2 &&
+      allowedChars.test(cleaned) &&
+      hasVowel.test(cleaned)
+    );
+  }
+
   function markError(field, message) {
     field.classList.add('input-error');
     field.placeholder = message;
+
+    iziToast.error({
+      title: 'Error',
+      message: message,
+      position: 'topRight',
+      timeout: 3000,
+    });
   }
 });
