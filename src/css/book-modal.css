@@ -106,7 +106,10 @@
     min-width: 42px;
     width: 42px;
     text-align: center;
-    background:transparent;
+    background-color: rgba(11, 5, 0, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(11, 5, 0, 0.15);
+    
 }
 
 .modal-books_quantity-container .btn {
@@ -117,6 +120,7 @@
         font-weight: 400;
         color: #0b0500;
         background: transparent;
+        height: 40px;
 }
 
 .modal-books_buttons-container {
@@ -127,31 +131,44 @@
 }
 
 .modal-books_buttons-container .btn {
-    border: 1px solid #0b0500;
+    border: 1px solid #e15d05;
     border-radius: 4px;
-    padding: 8px 20px;
-    width: 227px;
-    height: 40px;
+    padding: 12px 24px;
+        width: 309px;
+        height: 48px;
     font-family: "Rubik", sans-serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
     color: white;
     background: #e15d05;
+    transition: all 0.3s ease;
+}
+
+.modal-books_buttons-container .btn:hover {
+    background: black;
+    border: 1px solid #0b0500;
 }
 
 .modal-books_buttons-container .btn-secondary {
     border: 1px solid #0b0500;
         border-radius: 4px;
-        padding: 8px 20px;
-        width: 227px;
-        height: 40px;
+        padding: 12px 24px;
+        width: 309px;
+            height: 48px;
         font-family: "Rubik", sans-serif;
         font-weight: 400;
         font-size: 16px;
         line-height: 150%;
         color: #0b0500;
         background: transparent;
+        transition: all 0.3s ease;
+}
+
+.modal-books_buttons-container .btn-secondary:hover {
+    border: 1px solid #e15d05;
+    background-color: #e15d05;
+    color:white;
 }
 
 
