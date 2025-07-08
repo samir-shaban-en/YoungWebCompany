@@ -68,9 +68,6 @@
   fill: #0b0500;
 }
 
-.swiper-button-disabled {
-  opacity: 0.2;
-}
 @media only screen and (min-width: 768px) {
   .hero-scroll {
     display: block;
