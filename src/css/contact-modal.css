@@ -16,7 +16,9 @@
   padding: 16px;
   box-sizing: border-box;
 }
-
+.hero-images image {
+  object-fit: c;
+}
 .contact-modal-content {
   position: relative;
   padding: 64px 16px;
@@ -95,6 +97,11 @@
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 400ms ease;
+}
+.contact-modal-register-btn:hover,
+.contact-modal-register-btn:focus {
+  background-color: #0b0500;
 }
 
 /* #endregion mobile */
