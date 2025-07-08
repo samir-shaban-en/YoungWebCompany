@@ -4,7 +4,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 import 'swiper/css/pagination';
-
+const swiperBtn = document.querySelector('.scroll-btn');
 const swiper = new Swiper('.swiper', {
   modules: [Navigation, Pagination],
 

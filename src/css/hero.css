@@ -29,7 +29,7 @@
 }
 .hero-picture-text {
   position: absolute;
-  width: 100%;
+  max-width: 172px;
   left: 16px;
   bottom: 16px;
 }
@@ -41,14 +41,14 @@
   letter-spacing: -0.01em;
   color: #fff;
   margin-bottom: 16px;
-  max-width: 172px;
 }
 .hero-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #e15d05;
 
   border-radius: 2px;
-  padding-inline: 38px;
-  padding-block: 4.31px;
 
   text-align: center;
   font-weight: 400;
@@ -56,7 +56,8 @@
 
   line-height: 1.5;
   color: #fff;
-
+  width: 117px;
+  height: 20px;
   transition: background-color 400ms ease;
 }
 .hero-btn:hover,
@@ -68,9 +69,6 @@
   fill: #0b0500;
 }
 
-.swiper-button-disabled {
-  opacity: 0.2;
-}
 @media only screen and (min-width: 768px) {
   .hero-scroll {
     display: block;
@@ -83,7 +81,8 @@
   .hero-btn {
     border-radius: 4px;
     padding: 4px 20px;
-
+    width: 164px;
+    height: 32px;
     font-size: 16px;
   }
   .hero-nav-wrapper {
@@ -91,8 +90,9 @@
     gap: 16px;
     align-items: center;
   }
-  .hero-title {
-    max-width: 560px;
+
+  .hero-picture-text {
+    max-width: 274px;
   }
 }
 
@@ -104,9 +104,11 @@
     max-width: 392px;
   }
   .hero-btn {
-    padding: 8px 20px;
+    width: 227px;
+    height: 40px;
   }
-  .hero-title {
+
+  .hero-picture-text {
     max-width: 100%;
   }
 }
