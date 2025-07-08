@@ -43,13 +43,25 @@
 .footer-part-second {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+}
+.title-footer {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+.input-btn-wrap {
+  display: flex;
+  gap: 16px;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: baseline;
 }
 
 .footer-form {
-  display: flex;
   margin-top: 16px;
-  gap: 16px;
 }
 
 .footer-input {
@@ -72,6 +84,12 @@
   height: 48px;
   background: transparent;
   transition: all 0.3s ease;
+
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.5;
+  color: #0b0500;
 }
 
 .footer-btn:hover {
@@ -126,4 +144,16 @@
 
 .footer-input.invalid {
   border-color: red;
+}
+@media only screen and (max-width: 374px) {
+  .footer-part-second {
+    align-items: center;
+  }
+  .title-footer {
+    display: block;
+    text-align: center;
+  }
+  .input-btn-wrap {
+    flex-wrap: wrap;
+  }
 }
