@@ -43,6 +43,8 @@ if (currentRenderWidth < 768) {
   amountRenderedBooks = 24;
 }
 
+const amountRenderedBooks_initial = amountRenderedBooks;
+
 getTopBooks()
   .then(response => {
     markupTopBooks(response);
@@ -65,6 +67,8 @@ function stopPreloader() {
 
 function getName(event) {
   let categoryName = event.target.getAttribute('data-name');
+
+  amountRenderedBooks = amountRenderedBooks_initial;
 
   if (categoryName === 'top-books') {
     startPreloader();
@@ -168,7 +172,6 @@ function markupTopBooks(response) {
   booksShowed = 0;
   showBooks();
   stopPreloader();
-  startOpenModal();
 }
 
 function setAllBooksAfterClick(response) {
@@ -183,7 +186,6 @@ function setAllBooksAfterClick(response) {
   booksShowed = 0;
   showBooks();
   stopPreloader();
-  startOpenModal();
 }
 function showBooks() {
   let sumAllBooks = '';
@@ -206,6 +208,8 @@ function showBooks() {
   refs.totalBooks.textContent = booksData.length;
 
   refs.currentBooksShowed.textContent = booksShowed;
+
+  startOpenModal();
 }
 
 function setStatusActive(categoryName) {
