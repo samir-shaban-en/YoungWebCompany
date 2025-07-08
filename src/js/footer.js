@@ -1,3 +1,7 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
+
+
 const form = document.querySelector('.footer-form');
 const input = document.querySelector('.footer-input');
 const block = document.querySelector('#errorMessage');
@@ -37,5 +41,13 @@ function handleFormSubmit(event) {
         localStorage.removeItem("email-state");
         input.classList.remove('invalid');
         block.style.display = 'none';
+        iziToast.show({
+            message: "Email submitted successfully!",
+            position: 'topRight',
+            backgroundColor: '#59A10D',
+            titleColor: '#fff',
+            messageColor: '#fff',
+            close: true,
+        })
     }
 }
