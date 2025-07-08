@@ -92,6 +92,7 @@
 }
 iframe {
   height: 395px;
+  width: 100%;
 }
 /* Адаптивность для планшетов и меньше */
 @media (min-width: 768px) {
