@@ -244,6 +244,6 @@ export function hideLoadMoreButton() {
 
 refs.btnloadMore.addEventListener('click', event => {
   currentPage += 1;
-  amountRenderedBooks = 5;
+  amountRenderedBooks = 4;
   showBooks();
 });

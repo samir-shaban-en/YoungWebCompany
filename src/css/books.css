@@ -196,21 +196,22 @@
 .load-more {
   font-family: 'Rubik', sans-serif;
   background-color: #e15d05;
-  color: white;
-  border-radius: 8px;
-  padding: 8px 16px;
-  min-width: 91px;
-  height: 40px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 150%;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-  border: none;
+  border-radius: 4px;
+    padding: 12px 24px;
+    width: 342px;
+    height: 48px;
   display: none;
   margin: 0 auto;
-  margin-top: 10px;
+  margin-top: 24px;
+  color:white;
+  transition: all 0.3s ease;
 }
+.load-more:hover {
+  background: #0b0500;
+  color: #fff;
+}
+
+
 .books-subtitle-placeholder {
   display: flex;
   justify-content: space-between;
