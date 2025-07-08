@@ -1,6 +1,7 @@
 .location-section {
   padding-block: var(--section-block-paddings);
 }
+
 .location-block {
   display: flex;
   justify-content: space-between;
@@ -25,7 +26,6 @@
 
   font-weight: 600;
   font-size: 16px;
-
   line-height: 1.5;
   text-transform: capitalize;
 }
@@ -35,7 +35,6 @@
   font-size: 48px;
   line-height: 1.2;
   letter-spacing: -0.01em;
-
   margin-bottom: 24px;
 }
 
@@ -90,21 +89,23 @@
   width: 100%;
   overflow: hidden;
 }
-iframe {
+
+.map-container iframe {
+  width: 100%;
   height: 395px;
+  border: 0;
 }
-/* Адаптивность для планшетов и меньше */
+
 @media (min-width: 768px) {
   .location-block {
     gap: 32px;
-  }
-  .location-block {
     margin-bottom: 80px;
   }
-  iframe {
+  .map-container iframe {
     height: 738px;
   }
 }
+
 @media (min-width: 1440px) {
   .location-block {
     gap: 80px;

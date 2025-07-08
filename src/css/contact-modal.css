@@ -96,7 +96,10 @@
   border-radius: 4px;
   cursor: pointer;
 }
-
+.contact-modal-register-btn:hover,
+.contact-modal-register-btn:focus {
+  background-color: #0b0500;
+}
 /* #endregion mobile */
 
 /* #region tablet */

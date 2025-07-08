@@ -1,71 +1,88 @@
-<header>
-  <div class="container header-container">
-    <a class="logo-header" href="./index.html">
-      <img
-        class="img-logo-header"
-        src="/img/footer/logo-footer.svg"
-        alt="logo"
-      />
-    </a>
-    <button class="burger-btn" id="burger-btn" type="button" data-modal-open>
-      <svg width="24" height="24">
-        <use href="/img/symbol-defs.svg#icon-menu-alt-right"></use>
-      </svg>
-    </button>
-    <ul class="header-nav-list">
-      <li class="header-nav-item"><a href="/src/index.html">Home</a></li>
-      <li class="header-nav-item"><a href="#books">Books</a></li>
-      <li class="header-nav-item"><a href="#feedbacks">Feedbacks</a></li>
-      <li class="header-nav-item"><a href="#events">Events</a></li>
-      <li class="header-nav-item"><a href="#location">Location</a></li>
-    </ul>
-    <div class="nav-modal" id="navModal">
-      <nav>
-        <div class="logo-menu-nav-conteiner">
-          <a class="logo-header-menu-nav" href="/src/index.html">
-            <img
-              class="img-logo-header"
-              src="/img/footer/logo-footer.svg"
-              alt="logo"
-            />
-          </a>
-          <button
-            class="close-btn-burger"
-            id="closeMenu"
-            type="button"
-            data-modal-open
-          >
-            <svg width="48" height="48">
-              <use href="/img/symbol-defs.svg#icon-x"></use>
-            </svg>
-          </button>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container header-container">
+        <a class="logo-header" href="./index.html">
+          <img
+            class="img-logo-header"
+            src="/img/footer/logo-footer.svg"
+            alt="logo"
+          />
+        </a>
+        <button
+          class="burger-btn"
+          id="burger-btn"
+          type="button"
+          data-modal-open
+        >
+          <svg width="24" height="24">
+            <use href="/img/symbol-defs.svg#icon-menu-alt-right"></use>
+          </svg>
+        </button>
+        <ul class="header-nav-list">
+          <li class="header-nav-item"><a href="/src/index.html">Home</a></li>
+          <li class="header-nav-item"><a href="#books">Books</a></li>
+          <li class="header-nav-item"><a href="#feedbacks">Feedbacks</a></li>
+          <li class="header-nav-item"><a href="#events">Events</a></li>
+          <li class="header-nav-item"><a href="#location">Location</a></li>
+        </ul>
+        <div class="nav-modal" id="navModal">
+          <nav>
+            <div class="logo-menu-nav-conteiner">
+              <a class="logo-header-menu-nav" href="/src/index.html">
+                <img
+                  class="img-logo-header"
+                  src="/img/footer/logo-footer.svg"
+                  alt="logo"
+                />
+              </a>
+              <button
+                class="close-btn-burger"
+                id="closeMenu"
+                type="button"
+                data-modal-open
+              >
+                <svg width="48" height="48">
+                  <use href="/img/symbol-defs.svg#icon-x"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="nav-modal-list-conteiner">
+              <ul class="nav-list">
+                <li class="nav-modal-item">
+                  <a href="/src/index.html" data-link="/src/index.html">Home</a>
+                </li>
+                <li class="nav-modal-item">
+                  <a href="#" data-link="/src/partials/books.html#books"
+                    >Books</a
+                  >
+                </li>
+                <li class="nav-modal-item">
+                  <a href="#" data-link="/src/partials/feedbacks.html#feedbacks"
+                    >Feedbacks</a
+                  >
+                </li>
+                <li class="nav-modal-item">
+                  <a href="#" data-link="/src/partials/events.html#events"
+                    >Events</a
+                  >
+                </li>
+                <li class="nav-modal-item">
+                  <a href="#" data-link="/src/partials/location.html#location"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </nav>
         </div>
-        <div class="nav-modal-list-conteiner">
-          <ul class="nav-list">
-            <li class="nav-modal-item">
-              <a href="/src/index.html" data-link="/src/index.html">Home</a>
-            </li>
-            <li class="nav-modal-item">
-              <a href="#" data-link="/src/partials/books.html#books">Books</a>
-            </li>
-            <li class="nav-modal-item">
-              <a href="#" data-link="/src/partials/feedbacks.html#feedbacks"
-                >Feedbacks</a
-              >
-            </li>
-            <li class="nav-modal-item">
-              <a href="#" data-link="/src/partials/events.html#events"
-                >Events</a
-              >
-            </li>
-            <li class="nav-modal-item">
-              <a href="#" data-link="/src/partials/location.html#location"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
-</header>
+      </div>
+    </header>
+  </body>
+</html>
