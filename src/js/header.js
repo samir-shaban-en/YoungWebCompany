@@ -30,9 +30,5 @@ links.forEach(link => {
     navModal.classList.remove('open');
     burger.classList.remove('burger-hidden');
     document.body.style.overflow = 'auto';
-
-    setTimeout(() => {
-      window.location.href = target;
-    }, 200);
   });
 });
