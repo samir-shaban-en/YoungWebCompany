@@ -222,9 +222,9 @@ function setStatusActive(categoryName) {
 
 function renderBook(book) {
   return ` <li class="item book-info " tabindex="0" >
-	<div class="book-cover">
-			 <img src="${book.book_image}" alt="${book.title}" class="img">
-	</div>
+
+			 <img class='book-img' src="${book.book_image}" alt="${book.title}" class="img">
+
   <div class="book-content">
 	<p class="subject">${book.title.toLowerCase()}</p>
   <p class="price">$${book.price}</p>
