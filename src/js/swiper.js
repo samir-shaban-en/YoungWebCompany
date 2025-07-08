@@ -25,10 +25,10 @@ window.addEventListener('DOMContentLoaded', resizeHandler);
 const heroBtnRight = document.querySelector('.right');
 const heroBtnLeft = document.querySelector('.left');
 window.addEventListener('resize', resizeHandler);
-console.log(swiper);
+
 function resizeHandler() {
   const width = window.innerWidth;
-  console.log(width);
+
   if (width >= 1440) {
     swiper[1].params.slidesPerView = 3;
     swiper[1].update();

@@ -159,7 +159,6 @@ refs.booksBoxRef = document.querySelector('.js-list-books');
 function markupTopBooks(response) {
   refs.booksBoxRef.innerHTML = '';
 
-  console.log(response.data);
   booksData = [];
   for (const category of response.data) {
     const books = category.books;
@@ -167,7 +166,7 @@ function markupTopBooks(response) {
       booksData.push(books[i]);
     }
   }
-  console.log(booksData);
+
   currentPage = 1;
   booksShowed = 0;
   showBooks();
@@ -181,7 +180,7 @@ function setAllBooksAfterClick(response) {
   }
   refs.booksBoxRef.innerHTML = '';
   booksData = response.data;
-  console.log(booksData);
+
   currentPage = 1;
   booksShowed = 0;
   showBooks();

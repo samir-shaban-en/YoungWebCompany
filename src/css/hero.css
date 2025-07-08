@@ -98,6 +98,10 @@
   .hero-picture-text {
     max-width: 274px;
   }
+
+  .hero-picture-text {
+    top: 118px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -114,5 +118,9 @@
 
   .hero-picture-text {
     max-width: 100%;
+  }
+
+  .hero-picture-text {
+    top: 155px;
   }
 }
