@@ -22,7 +22,8 @@ const swiper = new Swiper('.swiper', {
 });
 
 window.addEventListener('DOMContentLoaded', resizeHandler);
-
+const heroBtnRight = document.querySelector('.right');
+const heroBtnLeft = document.querySelector('.left');
 window.addEventListener('resize', resizeHandler);
 console.log(swiper);
 function resizeHandler() {

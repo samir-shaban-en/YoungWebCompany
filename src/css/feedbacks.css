@@ -51,8 +51,26 @@
   display: flex;
   align-items: center;
   justify-content: center;
-}
 
+  transition: background-color 400ms ease;
+}
+.arrow-nav {
+  transition: fill 400ms ease;
+}
+.scroll-btn:hover,
+.scroll-btn:focus {
+  background-color: #fceee6;
+  .arrow-nav {
+    fill: #0b0500;
+  }
+}
+.scroll-btn:active {
+  background-color: #5a2502;
+
+  .arrow-nav {
+    fill: #fff;
+  }
+}
 .arrow-nav {
   fill: white;
 }

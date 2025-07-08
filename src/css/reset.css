@@ -26,9 +26,9 @@ a {
 button {
   cursor: pointer;
   padding: 0;
-  border: 0; 
-  background-color: transparent; }
-
+  border: 0;
+  background-color: transparent;
+}
 
 img {
   display: block;

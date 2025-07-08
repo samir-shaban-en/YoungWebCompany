@@ -29,6 +29,7 @@
 }
 .hero-picture-text {
   position: absolute;
+  width: 100%;
   left: 16px;
   bottom: 16px;
 }
@@ -44,7 +45,7 @@
 }
 .hero-btn {
   background-color: #e15d05;
-  border: 0.52px solid #e15d05;
+
   border-radius: 2px;
   padding-inline: 38px;
   padding-block: 4.31px;
@@ -55,8 +56,21 @@
 
   line-height: 1.5;
   color: #fff;
+
+  transition: background-color 400ms ease;
+}
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: #0b0500;
 }
 
+.hero-scroll svg {
+  fill: #0b0500;
+}
+
+.swiper-button-disabled {
+  opacity: 0.2;
+}
 @media only screen and (min-width: 768px) {
   .hero-scroll {
     display: block;

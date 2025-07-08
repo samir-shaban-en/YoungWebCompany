@@ -95,7 +95,7 @@ function makeCategories(response) {
     .join('');
   refs.categoriesListRef.insertAdjacentHTML('beforeend', markupCategor);
 
-  if (window.innerWidth < 1060) createMobileCategories();
+  if (window.innerWidth < 1440) createMobileCategories();
 }
 
 function createMobileCategories() {
@@ -121,7 +121,7 @@ function createMobileCategories() {
   customDropdown.appendChild(selected);
   customDropdown.appendChild(dropdownList);
 
-  ul.parentNode.insertBefore(customDropdown, ul);
+  ul.parentNode.appendChild(customDropdown, ul);
 
   ul.style.display = 'none';
 
