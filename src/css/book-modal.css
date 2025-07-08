@@ -121,8 +121,12 @@
         color: #0b0500;
         background: transparent;
         height: 40px;
+        transition: all 0.3s ease;
 }
-
+.modal-books_quantity-container .btn:hover {
+    border: 1px solid black;
+    background-color: #ea8d50;
+}
 .modal-books_buttons-container {
     display: flex;
     flex-direction: column;
@@ -166,8 +170,8 @@
 }
 
 .modal-books_buttons-container .btn-secondary:hover {
-    border: 1px solid #e15d05;
-    background-color: #e15d05;
+    border: 1px solid black;
+    background-color: #ea8d50;
     color:white;
 }
 
