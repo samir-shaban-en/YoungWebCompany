@@ -16,9 +16,7 @@
   padding: 16px;
   box-sizing: border-box;
 }
-.hero-images image {
-  object-fit: c;
-}
+
 .contact-modal-content {
   position: relative;
   padding: 64px 16px;
