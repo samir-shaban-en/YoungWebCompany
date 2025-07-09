@@ -259,7 +259,7 @@
 
 .custom-dropdown .selected {
   width: 100%;
-  background: rgba(11, 5, 0, 0.05);
+
   padding: 10px;
   cursor: pointer;
   border: 1px solid #baafa7;
@@ -344,9 +344,28 @@
 }
 @media only screen and (min-width: 768px) {
   .categories-books {
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 32px;
+  }
+
+  .container-categories {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+  }
+  .books-subtitle-placeholder {
+    gap: 244px;
+    margin: 0;
+  }
+  .custom-dropdown {
+    min-width: 249px;
+    max-height: 51px;
+  }
+  .books-subtitle-placeholder div {
+    display: flex;
+  }
+  .selected {
+    max-height: 51px;
+    border-radius: 4px;
   }
 }
 
@@ -378,6 +397,9 @@
   }
   .book-img {
     height: 322px;
+  }
+  .books-subtitle-placeholder {
+    display: none;
   }
 }
 .loader {
