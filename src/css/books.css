@@ -79,6 +79,7 @@
 
 .books .container .books-wrapper .list-books .book-info {
   min-height: 345px;
+  width: 320px;
 }
 
 @media screen and (min-width: 1440px) {
