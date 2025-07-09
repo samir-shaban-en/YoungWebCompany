@@ -49,6 +49,10 @@
   margin-bottom: 16px;
 }
 
+.hero-picture-text span {
+  display: block;
+}
+
 @media only screen and (max-width: 360px) {
   .hero-text {
     margin-bottom: 0;
