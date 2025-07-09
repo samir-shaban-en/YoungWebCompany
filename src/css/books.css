@@ -122,7 +122,6 @@
 }
 
 .categories-books {
-  max-width: 308px;
   color: rgba(17, 17, 17, 0.6);
   height: 100%;
 }
@@ -199,10 +198,12 @@
 .load-more {
   background-color: #e15d05;
   border-radius: 4px;
-  padding: 12px 130px;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: 400;
+
+  padding: 12px 24px;
+  width: 342px;
+  height: 48px;
+  display: none;
+
   margin: 0 auto;
   margin-top: 24px;
   color: white;
@@ -322,20 +323,21 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
-.book-img {
+
+.js-listener-categories {
   width: 100%;
 
-  border-radius: 8px;
 }
 @media only screen and (min-width: 768px) {
   .list-books {
     width: calc((100% - 24px));
   }
-  .item.book-info {
-    max-height: 439px;
-  }
-  .book-img {
-    max-height: 483px;
+
+  .js-listener-categories {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
+
   }
 }
 
