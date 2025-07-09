@@ -332,7 +332,7 @@
     max-height: 439px;
   }
   .book-img {
-    max-height: 483px;
+    max-height: ;
   }
 }
 
@@ -357,8 +357,5 @@
     max-width: 227px;
     max-height: 316px;
     min-height: 316px;
-  }
-  .book-img {
-    max-height: 322px;
   }
 }

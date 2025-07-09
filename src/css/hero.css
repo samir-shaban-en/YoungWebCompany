@@ -28,10 +28,14 @@
 }
 .hero-picture-text {
   position: absolute;
-  max-width: 172px;
+
   left: 16px;
   top: 5.625em;
 }
+.span {
+  display: block;
+}
+
 .hero-text {
   font-weight: 600;
   font-size: 20px;
@@ -41,6 +45,7 @@
   color: #fff;
   margin-bottom: 16px;
 }
+
 @media only screen and (max-width: 360px) {
   .hero-text {
     margin-bottom: 0;
@@ -80,7 +85,6 @@
   .hero-text {
     font-size: 32px;
     line-height: 1.2;
-    max-width: 274px;
   }
   .hero-btn {
     border-radius: 4px;
@@ -93,10 +97,6 @@
     display: flex;
     gap: 16px;
     align-items: center;
-  }
-
-  .hero-picture-text {
-    max-width: 274px;
   }
 
   .hero-picture-text {
@@ -114,10 +114,6 @@
   .hero-btn {
     width: 227px;
     height: 40px;
-  }
-
-  .hero-picture-text {
-    max-width: 100%;
   }
 
   .hero-picture-text {
