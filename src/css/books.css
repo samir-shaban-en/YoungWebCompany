@@ -399,10 +399,9 @@
   .custom-dropdown {
     min-width: 249px;
     max-height: 51px;
+    margin-left: 200px;
   }
-  .books-subtitle-placeholder div {
-    display: flex;
-  }
+
   .selected {
     max-height: 51px;
     border-radius: 4px;
@@ -448,7 +447,7 @@
     width: 227px;
   }
   .books-subtitle-placeholder {
-    display: none;
+    gap: 5px;
   }
 }
 .loader {
