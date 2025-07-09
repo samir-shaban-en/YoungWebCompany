@@ -38,6 +38,7 @@
 
 }
 
+
 .hero-text {
   font-weight: 600;
   font-size: 20px;
@@ -102,10 +103,7 @@
   }
 
   .hero-picture-text {
-    top: 118px;
-  }
 
-  .hero-picture-text {
     top: 118px;
   }
 }
@@ -115,7 +113,6 @@
     font-size: 52px;
 
     line-height: 1.2;
-    max-width: 392px;
   }
   .hero-btn {
     width: 227px;
@@ -123,10 +120,7 @@
   }
 
   .hero-picture-text {
-    top: 155px;
-  }
 
-  .hero-picture-text {
     top: 155px;
   }
 }
