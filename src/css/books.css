@@ -411,6 +411,10 @@
     height: 483px;
     width: 340px;
   }
+  .modal-books_img {
+    width: 309px;
+    height: 466px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
