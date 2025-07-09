@@ -14,6 +14,7 @@ const refs = {
   loader: document.querySelector('.loader'),
   currentBooksShowed: document.querySelector('.current-number-books'),
   totalBooks: document.querySelector('.total-number-books'),
+  booksBoxRef: document.querySelector('.js-list-books'),
 };
 refs.categoriesListenRef.addEventListener('click', getName);
 
@@ -53,7 +54,6 @@ getTopBooks()
 
 getCategories()
   .then(response => {
-    startPreloader();
     makeCategories(response);
   })
   .catch(error => console.log(error));
@@ -61,31 +61,34 @@ getCategories()
 function startPreloader() {
   refs.loader.style.display = 'block';
 }
+
 function stopPreloader() {
   refs.loader.style.display = 'none';
 }
 
 function getName(event) {
+  refs.booksBoxRef.innerHTML = '';
+  startPreloader();
+  hideLoadMoreButton();
   let categoryName = event.target.getAttribute('data-name');
 
   amountRenderedBooks = amountRenderedBooks_initial;
 
   if (categoryName === 'top-books') {
-    startPreloader();
     getCategoryBooks(categoryName)
       .then(response => {
         markupTopBooks(response);
       })
-      .catch(error => console.log(error));
+      .catch(error => console.log(error))
+      .finally(() => stopPreloader());
   } else {
-    startPreloader();
     getCategoryBooksByCategory(categoryName)
       .then(response => {
         setAllBooksAfterClick(response);
       })
-      .catch(error => console.log(error));
+      .catch(error => console.log(error))
+      .finally(() => stopPreloader());
   }
-  setStatusActive(categoryName);
 }
 
 function makeCategories(response) {
@@ -146,19 +149,14 @@ function createMobileCategories() {
       const value = e.target.getAttribute('data-name');
       getName(e);
       dropdownList.style.display = 'none';
-
-      // Здесь можно вызвать функцию, отправить AJAX или использовать значение дальше
     }
   });
 
   refs.categoriesListenRef.removeEventListener('click', getName);
 }
 
-refs.booksBoxRef = document.querySelector('.js-list-books');
-
 function markupTopBooks(response) {
   refs.booksBoxRef.innerHTML = '';
-
   booksData = [];
   for (const category of response.data) {
     const books = category.books;
@@ -170,21 +168,18 @@ function markupTopBooks(response) {
   currentPage = 1;
   booksShowed = 0;
   showBooks();
-  stopPreloader();
 }
 
 function setAllBooksAfterClick(response) {
+  refs.booksBoxRef.innerHTML = '';
   if (response.request.responseURL.includes('top-books')) {
     markupTopBooks(response);
     return;
   }
-  refs.booksBoxRef.innerHTML = '';
   booksData = response.data;
-
   currentPage = 1;
   booksShowed = 0;
   showBooks();
-  stopPreloader();
 }
 function showBooks() {
   let sumAllBooks = '';

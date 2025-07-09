@@ -10,6 +10,7 @@ export async function getBooks(url) {
     return response;
   } catch (error) {
     console.error(error);
+  } finally {
   }
 }
 
