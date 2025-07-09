@@ -327,9 +327,16 @@
   pointer-events: none;
 }
 
-.js-listener-categories {
-  width: 100%;
+.book-img {
+  min-width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 
+
+@media only screen and (max-width: 374px) {
+  .load-more {
+    padding: 12px 100px;
+  }
 }
 @media only screen and (min-width: 768px) {
 
