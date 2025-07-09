@@ -170,9 +170,8 @@
   .categories-books .container-categories {
     display: flex;
     justify-content: space-between;
-    margin-left: 5px;
-    max-width: 677px;
-    margin-left: 13px;
+    max-width: 650px;
+    margin-left: 20px;
   }
 }
 
