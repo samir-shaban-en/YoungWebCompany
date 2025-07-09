@@ -95,6 +95,11 @@
   width: 100%;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 400ms ease;
+}
+.contact-modal-register-btn:hover,
+.contact-modal-register-btn:focus {
+  background-color: #0b0500;
 }
 
 /* #endregion mobile */

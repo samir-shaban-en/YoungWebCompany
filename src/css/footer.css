@@ -77,6 +77,12 @@
   color: rgba(11, 5, 0, 0.6);
 }
 
+.footer-input:focus {
+  border: 1px solid rgba(11, 5, 0, 0.6);
+  outline: none;
+  transition: all 0.3s ease;
+}
+
 .footer-btn {
   border: 1px solid #0b0500;
   border-radius: 4px;
