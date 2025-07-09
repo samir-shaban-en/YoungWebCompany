@@ -81,7 +81,10 @@
 
 @media screen and (min-width: 768px) {
   .books .container .books-wrapper .list-books .book-info {
-    max-width: 218px;
+    width: 340px;
+  }
+  .book-img {
+    height: 483px;
   }
 }
 
@@ -325,14 +328,10 @@
   border-radius: 8px;
 }
 @media only screen and (min-width: 768px) {
-  .list-books {
-    width: calc((100% - 24px));
-  }
-  .item.book-info {
-    max-height: 439px;
-  }
-  .book-img {
-    max-height: ;
+  .categories-books {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 32px;
   }
 }
 
@@ -357,5 +356,12 @@
     max-width: 227px;
     max-height: 316px;
     min-height: 316px;
+  }
+
+  .books .container .books-wrapper .list-books .book-info {
+    width: 227px;
+  }
+  .book-img {
+    height: 322px;
   }
 }
