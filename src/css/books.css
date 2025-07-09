@@ -332,6 +332,7 @@
     padding: 12px 100px;
   }
 }
+
 @media only screen and (min-width: 768px) {
   .categories-books {
     margin-left: auto;
