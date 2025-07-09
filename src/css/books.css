@@ -147,6 +147,8 @@
   height: 100%;
   font-size: 16px;
   letter-spacing: -0.02em;
+
+  margin-bottom: 32px;
 }
 
 /* @media screen and (min-width: 768px) {
@@ -202,9 +204,8 @@
   background-color: #e15d05;
   border-radius: 4px;
 
-  padding: 12px 24px;
-  width: 342px;
-  height: 48px;
+  padding: 12px 130px;
+
   display: none;
 
   margin: 0 auto;
@@ -335,6 +336,11 @@
   border-radius: 4px;
   width: 100%;
   object-fit: cover;
+}
+@media only screen and (max-width: 378px) {
+  .load-more {
+    padding: 12px 50px;
+  }
 }
 @media only screen and (min-width: 768px) {
   .categories-books {
