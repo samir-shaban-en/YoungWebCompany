@@ -249,37 +249,39 @@
 
 .custom-dropdown {
   position: relative;
-  width: 100%;
+
   user-select: none;
   border: 1px solid #baafa7;
   border-radius: 4px;
-  background-color: #baafa7;
+
+  z-index: 99999;
 }
 
 .custom-dropdown .selected {
-  width: 100%;
-  background: #baafa7;
+  position: relative;
+  z-index: 99999;
+  background: rgba(11, 5, 0, 0.15);
   padding: 10px;
   cursor: pointer;
-  border: 1px solid #baafa7;
+  border: 1px solid rgba(11, 5, 0, 0.15);
 }
 .categories-books {
   max-width: 342px;
 }
+
 .custom-dropdown .dropdown-list {
   position: absolute;
-  top: 100%;
+
   left: 0;
   right: 0;
   max-height: 400px;
-  background: #baafa7;
-
+  background: #999999ed;
   border: 1px solid #ccc;
   border-top: none;
   overflow-y: auto;
   display: none;
   z-index: 9999;
-  font-family: 'Rubik', sans-serif;
+
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
@@ -301,7 +303,7 @@
 }
 
 .custom-dropdown .dropdown-list::-webkit-scrollbar-track {
-  background: rgba(11, 5, 0, 0.15);
+  background: rgba(11, 5, 0, 0.05);
 }
 
 .custom-dropdown .dropdown-list::-webkit-scrollbar-thumb {
@@ -376,5 +378,40 @@
   }
   .book-img {
     height: 322px;
+  }
+}
+
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  border-bottom-color: #ff3d00;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
