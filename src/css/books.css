@@ -350,7 +350,7 @@
   .container-categories {
     display: flex;
     justify-content: space-between;
-    gap: 50px;
+    gap: 24px;
   }
   .books-subtitle-placeholder {
     gap: 244px;
