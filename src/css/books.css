@@ -105,7 +105,6 @@
 }
 
 .books .container .books-wrapper .list-books .book-info .book-cover img {
-  
   width: 343px;
   height: 500px;
   object-fit: fill;
@@ -121,8 +120,8 @@
 
 @media screen and (min-width: 1440px) {
   .books .container .books-wrapper .list-books .book-info .book-cover img {
-  height: 330px;
-  width: 227px;
+    height: 330px;
+    width: 227px;
   }
 }
 
@@ -141,9 +140,7 @@
 .categories-books {
   color: rgba(17, 17, 17, 0.6);
   height: 100%;
-
 }
-
 
 /* @media screen and (min-width: 768px) {
   .categories-books {
@@ -169,11 +166,11 @@
   .categories-books .container-categories {
     display: flex;
     justify-content: space-between;
-    margin-left:5px;
+    margin-left: 5px;
     max-width: 677px;
     margin-left: 13px;
   }
-} 
+}
 @media screen and (min-width: 1440px) {
   .categories-books .container-categories {
     display: block;
@@ -223,9 +220,9 @@
 .load-more {
   background-color: #e15d05;
   border-radius: 4px;
-    padding: 12px 24px;
-    width: 100%;
-    height: 48px;
+  padding: 12px 24px;
+
+  height: 48px;
   display: none;
 
   margin: 0 auto;
@@ -240,7 +237,7 @@
 
 @media screen and (min-width: 350px) {
   .load-more {
-  width: 328px;
+    width: 328px;
   }
 }
 .books-subtitle-placeholder {
@@ -248,18 +245,19 @@
   justify-content: space-between;
 }
 @media only screen and (min-width: 768px) {
-.books-subtitle-placeholder {
-  display: flex;
-  justify-content: space-between;
-  width: 50%;
-}
+  .books-subtitle-placeholder {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+  }
 }
 @media only screen and (min-width: 1440px) {
   .books-subtitle-placeholder {
     display: flex;
     justify-content: space-between;
     width: 100%;
-  } }
+  }
+}
 .books-subtitle-placeholder h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 600;
@@ -289,7 +287,7 @@
 
 .custom-dropdown {
   position: relative;
-  width: 335px;
+
   max-width: 400px;
   user-select: none;
   border: 1px solid #baafa7;
@@ -501,7 +499,7 @@
   top: 0;
   bottom: 0;
   margin: auto;
-  border: 3px dotted #FF3D00;
+  border: 3px dotted #ff3d00;
   border-style: solid solid dotted;
   width: 24px;
   height: 24px;
