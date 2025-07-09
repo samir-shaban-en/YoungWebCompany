@@ -110,6 +110,9 @@
 
     top: 118px;
   }
+  .hero-title {
+    max-width: 560px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -126,5 +129,8 @@
   .hero-picture-text {
 
     top: 155px;
+  }
+  .hero-title {
+    max-width: 100%;
   }
 }
