@@ -123,17 +123,6 @@
   max-height: 150px;
 }
 
-/* @media screen and (min-width: 768px) {
-  .categories-books {
-    max-width: 768px;
-    display: flex;
-
-    column-gap: 32px;
-    padding: 40px 32px 100px 32px;
-    margin: 0 auto;
-  }
-} */
-
 .categories-books .container-categories {
   margin: 0 auto;
   max-width: 335px;
@@ -143,16 +132,6 @@
   letter-spacing: -0.02em;
   max-height: 150px;
 }
-
-/* @media screen and (min-width: 768px) {
-  .categories-books .container-categories {
-    max-width: 337px;
-    height: 472px;
-    font-size: 18px;
-    line-height: 1.33;
-    max-height: 150px;
-  }
-} */
 
 .categories-books .container-categories .categories {
   margin-bottom: 40px;
