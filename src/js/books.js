@@ -155,6 +155,7 @@ refs.booksBoxRef = document.querySelector('.js-list-books');
 function markupTopBooks(response) {
   refs.booksBoxRef.innerHTML = '';
 
+  console.log(response.data);
   booksData = [];
   for (const category of response.data) {
     const books = category.books;
