@@ -74,17 +74,16 @@
   color: #0b0500;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .books .container .books-wrapper .list-books .book-info {
-  position: relative;
-  width: 100%;
   min-height: 345px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1440px) {
   .books .container .books-wrapper .list-books .book-info {
-    max-width: 218px;
+    width: 227px;
   }
 }
 
@@ -105,11 +104,28 @@
 }
 
 .books .container .books-wrapper .list-books .book-info .book-cover img {
-  width: 100%;
-  height: 330px;
+  
+  width: 343px;
+  height: 500px;
+  object-fit: fill;
+  max-width: 343px;
 }
 
 @media screen and (min-width: 768px) {
+  .books .container .books-wrapper .list-books .book-info .book-cover img {
+    height: 450px;
+    width: 328px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .books .container .books-wrapper .list-books .book-info .book-cover img {
+  height: 330px;
+  width: 227px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
   .books .container .books-wrapper .list-books .book-info .book-cover {
     max-width: 227px;
     max-height: 316px;
@@ -122,10 +138,11 @@
 }
 
 .categories-books {
-  max-width: 308px;
   color: rgba(17, 17, 17, 0.6);
   height: 100%;
+
 }
+
 
 /* @media screen and (min-width: 768px) {
   .categories-books {
@@ -145,17 +162,24 @@
   height: 100%;
   font-size: 16px;
   letter-spacing: -0.02em;
+  
 }
 
-/* @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .categories-books .container-categories {
-    max-width: 337px;
-    height: 472px;
-    font-size: 18px;
-    line-height: 1.33;
-    max-height: 150px;
+    display: flex;
+    justify-content: space-between;
+    margin-left:5px;
+    max-width: 677px;
+    margin-left: 13px;
   }
-} */
+} 
+@media screen and (min-width: 1440px) {
+  .categories-books .container-categories {
+    display: block;
+    max-width: 335px;
+  }
+}
 
 .categories-books .container-categories .categories {
   margin-bottom: 40px;
@@ -201,7 +225,7 @@
   background-color: #e15d05;
   border-radius: 4px;
     padding: 12px 24px;
-    width: 342px;
+    width: 328px;
     height: 48px;
   display: none;
   margin: 0 auto;
@@ -219,6 +243,19 @@
   display: flex;
   justify-content: space-between;
 }
+@media only screen and (min-width: 768px) {
+.books-subtitle-placeholder {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+}
+@media only screen and (min-width: 1440px) {
+  .books-subtitle-placeholder {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  } }
 .books-subtitle-placeholder h3 {
   font-family: 'Rubik', sans-serif;
   font-weight: 600;
@@ -243,16 +280,18 @@
   display: flex;
   justify-content: space-between;
   padding-top: 16px;
+  max-width: 343px;
 }
 
 .custom-dropdown {
   position: relative;
-  width: 100%;
+  width: 335px;
   max-width: 400px;
   user-select: none;
   border: 1px solid #baafa7;
   border-radius: 4px;
   background-color: #baafa7;
+  margin-bottom: 24px;
 }
 
 .custom-dropdown .selected {
@@ -358,5 +397,56 @@
 @media screen and (min-width: 1440px) {
   .books-list-placeholder {
     min-width: 1004px;
+  }
+}
+
+.loader {
+  width: 96px;
+  height: 96px;
+  border: 3px dotted blueviolet;
+  border-style: solid solid dotted dotted;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  animation: rotation 2s linear infinite;
+  margin: 0 auto;
+  display: none;
+}
+
+.loader::after {
+  content: '';
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  border: 3px dotted #FF3D00;
+  border-style: solid solid dotted;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  animation: rotationBack 1s linear infinite;
+  transform-origin: center center;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotationBack {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(-360deg);
   }
 }
