@@ -31,10 +31,13 @@
 
   left: 16px;
   top: 5.625em;
+
 }
 .span {
   display: block;
+
 }
+
 
 .hero-text {
   font-weight: 600;
@@ -100,6 +103,7 @@
   }
 
   .hero-picture-text {
+
     top: 118px;
   }
 }
@@ -116,6 +120,7 @@
   }
 
   .hero-picture-text {
+
     top: 155px;
   }
 }
