@@ -31,7 +31,14 @@
 
   left: 16px;
   top: 5.625em;
+
 }
+.span {
+  display: block;
+
+}
+
+
 .hero-text {
   font-weight: 600;
   font-size: 20px;
@@ -41,9 +48,11 @@
   color: #fff;
   margin-bottom: 16px;
 }
+
 .hero-picture-text span {
   display: block;
 }
+
 @media only screen and (max-width: 360px) {
   .hero-text {
     margin-bottom: 0;
@@ -98,6 +107,7 @@
   }
 
   .hero-picture-text {
+
     top: 118px;
   }
 }
@@ -114,6 +124,7 @@
   }
 
   .hero-picture-text {
+
     top: 155px;
   }
 }
