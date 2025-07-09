@@ -19,6 +19,7 @@
   color: #0b0500;
   background-color: transparent;
   transition: background-color 400ms ease;
+  margin-top: 16px;
 }
 
 .books .container .books-wrapper .button:hover {
@@ -71,6 +72,8 @@
   font-size: 14px;
   line-height: 150%;
   color: #0b0500;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .books .container .books-wrapper .list-books .book-info {
@@ -103,6 +106,7 @@
 
 .books .container .books-wrapper .list-books .book-info .book-cover img {
   width: 100%;
+  height: 330px;
 }
 
 @media screen and (min-width: 768px) {
@@ -119,7 +123,7 @@
 
 .categories-books {
   color: rgba(17, 17, 17, 0.6);
-  max-height: 150px;
+  height: 100%;
 }
 
 /* @media screen and (min-width: 768px) {
@@ -137,10 +141,9 @@
   margin: 0 auto;
   max-width: 335px;
   width: 100%;
-  height: 100px;
+  height: 100%;
   font-size: 16px;
   letter-spacing: -0.02em;
-  max-height: 150px;
 }
 
 /* @media screen and (min-width: 768px) {
@@ -193,13 +196,14 @@
 }
 
 .load-more {
-  font-family: 'Rubik', sans-serif;
   background-color: #e15d05;
   border-radius: 4px;
+
   padding: 12px 24px;
   width: 342px;
   height: 48px;
   display: none;
+
   margin: 0 auto;
   margin-top: 24px;
   color: white;
@@ -243,7 +247,6 @@
 .custom-dropdown {
   position: relative;
   width: 100%;
-  max-width: 400px;
   user-select: none;
   border: 1px solid #baafa7;
   border-radius: 4px;
@@ -251,12 +254,15 @@
 }
 
 .custom-dropdown .selected {
+  width: 100%;
   background: #baafa7;
   padding: 10px;
   cursor: pointer;
   border: 1px solid #baafa7;
 }
-
+.categories-books {
+  max-width: 342px;
+}
 .custom-dropdown .dropdown-list {
   position: absolute;
   top: 100%;
@@ -317,48 +323,47 @@
   transform: translateY(-50%);
   pointer-events: none;
 }
+
 .js-listener-categories {
   width: 100%;
+
 }
 @media only screen and (min-width: 768px) {
   .list-books {
     width: calc((100% - 24px));
   }
+
   .js-listener-categories {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .books-list-placeholder {
+    min-width: 1004px;
+  }
   .categories-books {
     max-width: 308px;
     width: 100%;
     display: block;
     padding: 0;
-    max-height: 100%;
+    height: 100%;
   }
-}
-
-@media screen and (min-width: 1440px) {
   .books .container .books-wrapper {
     display: flex;
     max-width: 1440px;
     margin: 0 auto;
     column-gap: 24px;
   }
-}
-
-@media screen and (min-width: 1440px) {
   .books .container .books-wrapper .list-books .book-info .book-cover {
     max-width: 227px;
     max-height: 316px;
     min-height: 316px;
   }
-}
-@media screen and (min-width: 1440px) {
-  .books-list-placeholder {
-    min-width: 1004px;
+  .book-img {
+    max-height: 322px;
   }
 }

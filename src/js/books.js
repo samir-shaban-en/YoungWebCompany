@@ -43,6 +43,8 @@ if (currentRenderWidth < 768) {
   amountRenderedBooks = 24;
 }
 
+const amountRenderedBooks_initial = amountRenderedBooks;
+
 getTopBooks()
   .then(response => {
     markupTopBooks(response);
@@ -65,6 +67,8 @@ function stopPreloader() {
 
 function getName(event) {
   let categoryName = event.target.getAttribute('data-name');
+
+  amountRenderedBooks = amountRenderedBooks_initial;
 
   if (categoryName === 'top-books') {
     startPreloader();
@@ -155,7 +159,6 @@ refs.booksBoxRef = document.querySelector('.js-list-books');
 function markupTopBooks(response) {
   refs.booksBoxRef.innerHTML = '';
 
-  console.log(response.data);
   booksData = [];
   for (const category of response.data) {
     const books = category.books;
@@ -163,12 +166,11 @@ function markupTopBooks(response) {
       booksData.push(books[i]);
     }
   }
-  console.log(booksData);
+
   currentPage = 1;
   booksShowed = 0;
   showBooks();
   stopPreloader();
-  startOpenModal();
 }
 
 function setAllBooksAfterClick(response) {
@@ -178,12 +180,11 @@ function setAllBooksAfterClick(response) {
   }
   refs.booksBoxRef.innerHTML = '';
   booksData = response.data;
-  console.log(booksData);
+
   currentPage = 1;
   booksShowed = 0;
   showBooks();
   stopPreloader();
-  startOpenModal();
 }
 function showBooks() {
   let sumAllBooks = '';
@@ -206,6 +207,8 @@ function showBooks() {
   refs.totalBooks.textContent = booksData.length;
 
   refs.currentBooksShowed.textContent = booksShowed;
+
+  startOpenModal();
 }
 
 function setStatusActive(categoryName) {
@@ -222,9 +225,9 @@ function setStatusActive(categoryName) {
 
 function renderBook(book) {
   return ` <li class="item book-info " tabindex="0" >
-	<div class="book-cover">
-			 <img src="${book.book_image}" alt="${book.title}" class="img">
-	</div>
+
+			 <img class='book-img' src="${book.book_image}" alt="${book.title}" class="img">
+
   <div class="book-content">
 	<p class="subject">${book.title.toLowerCase()}</p>
   <p class="price">$${book.price}</p>

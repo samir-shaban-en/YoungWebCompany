@@ -31,9 +31,11 @@
 
   left: 16px;
   top: 5.625em;
+
 }
 .span {
   display: block;
+
 }
 
 .hero-text {
@@ -102,6 +104,10 @@
   .hero-picture-text {
     top: 118px;
   }
+
+  .hero-picture-text {
+    top: 118px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -114,6 +120,10 @@
   .hero-btn {
     width: 227px;
     height: 40px;
+  }
+
+  .hero-picture-text {
+    top: 155px;
   }
 
   .hero-picture-text {

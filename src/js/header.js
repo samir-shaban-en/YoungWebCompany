@@ -2,13 +2,13 @@ const burger = document.getElementById('burger-btn');
 const navModal = document.getElementById('navModal');
 const closeMenu = document.getElementById('closeMenu');
 
-burger?.addEventListener('click', () => {
+burger.addEventListener('click', () => {
   navModal.classList.add('open');
   burger.classList.add('burger-hidden');
   document.body.style.overflow = 'hidden';
 });
 
-closeMenu?.addEventListener('click', () => {
+closeMenu.addEventListener('click', () => {
   navModal.classList.remove('open');
   burger.classList.remove('burger-hidden');
   document.body.style.overflow = 'auto';
@@ -24,20 +24,11 @@ window.addEventListener('click', e => {
 const links = document.querySelectorAll('.nav-list a');
 
 links.forEach(link => {
-  link.addEventListener('click', (e) => {
+  link.addEventListener('click', e => {
     const target = link.getAttribute('data-link');
 
-    
     navModal.classList.remove('open');
     burger.classList.remove('burger-hidden');
     document.body.style.overflow = 'auto';
-
-    
-    setTimeout(() => {
-      window.location.href = target;
-    }, 200); 
   });
 });
-
-
-
